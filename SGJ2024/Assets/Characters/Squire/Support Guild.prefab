@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5296540621450118508}
   - component: {fileID: 5266306105402402643}
   - component: {fileID: 225260451904514129}
+  - component: {fileID: 3668133626282772764}
   m_Layer: 0
   m_Name: Support Guild
   m_TagString: Untagged
@@ -145,6 +146,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3668133626282772764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987242190646698591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c75ba422eedfe54ebe6f5f2588b8b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefab: {fileID: 5700417552969976755, guid: 5d9877bc4ec9c8942800de66900a6849, type: 3}
+  _poolSize: 5
+  _target: {fileID: 0}
+  _collector: {fileID: 0}
+  _reload: 0.25
 --- !u!1 &6363480337359316586
 GameObject:
   m_ObjectHideFlags: 0
