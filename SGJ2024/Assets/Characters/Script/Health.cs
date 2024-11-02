@@ -10,6 +10,11 @@ namespace BattleSystem
         [SerializeField] private UnityEvent _onHealthOver;
         protected int _currentValue;
 
+        public int GetValue()
+        {
+            return _currentValue;
+        }
+
         public void SetCount(int value)
         {
             _count = value;
