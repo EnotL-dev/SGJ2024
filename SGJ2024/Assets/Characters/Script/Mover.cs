@@ -12,7 +12,7 @@ namespace Guild
         {
             Vector3 moving = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             moving = Vector3.ClampMagnitude(moving, 1);
-            _rigidbody.MovePosition(transform.position + moving * _speed * Time.fixedDeltaTime);
+            _rigidbody.MovePosition(transform.position + _speed * Time.fixedDeltaTime * moving);
         }
 
         private void Start()

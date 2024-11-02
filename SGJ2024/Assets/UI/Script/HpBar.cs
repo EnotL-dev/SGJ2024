@@ -14,6 +14,6 @@ public class HpBar : MonoBehaviour
             _output.value = 0;
 
         }
-        Debug.Log($"currentValue = {currentValue} | maxValue = {maxValue}");
+        //Debug.Log($"currentValue = {currentValue} | maxValue = {maxValue}");
     }
 }

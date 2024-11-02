@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2126779843528233049}
   - component: {fileID: 3357584058082386043}
-  - component: {fileID: 5687413577834123151}
   - component: {fileID: 8850991272067388278}
+  - component: {fileID: 5766062835771264927}
+  - component: {fileID: 8622981279301511662}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -76,37 +77,7 @@ MonoBehaviour:
   _moveTime: 0.5
   _maxDistance: -0.5
   _damage: 50
---- !u!114 &5687413577834123151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5569614786188478277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a0ac7b835fab24b86f9d6adc098215, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _count: 100
-  _onHealthOver:
-    m_PersistentCalls:
-      m_Calls: []
-  _onHealthUpdate:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4846682260729575825}
-        m_TargetAssemblyTypeName: HpBar, Assembly-CSharp
-        m_MethodName: UpdateValue
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  _sprite: {fileID: 9024855202187067892}
 --- !u!114 &8850991272067388278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +91,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemies: []
+--- !u!114 &5766062835771264927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569614786188478277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b2a6eed7ffdff418ce1b187417d3d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: {fileID: 8622981279301511662}
+  _states: {fileID: 3357584058082386043}
+--- !u!114 &8622981279301511662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569614786188478277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b32d956db55a1458d4eafb7868caad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _count: 100
+  _hpBar: {fileID: 4846682260729575825}
+  _onHealthOver:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3357584058082386043}
+        m_TargetAssemblyTypeName: BattleSystem.StateBehaviour, Assembly-CSharp
+        m_MethodName: SetDeadState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1332031755054898774}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _battle: {fileID: 0}
 --- !u!1 &8381367421160068515
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +222,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8985680732576350864, guid: 978366ae44e56a94b9ca22154112fd57, type: 3}
   m_Color: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
   m_FlipX: 0
@@ -316,12 +343,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1fc06d78a1f391469b639b9b87d41ea, type: 3}
+--- !u!1 &1332031755054898774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4269633062174942759, guid: a1fc06d78a1f391469b639b9b87d41ea, type: 3}
+  m_PrefabInstance: {fileID: 2971420780663224433}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4846682260729575825 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7673646280687223264, guid: a1fc06d78a1f391469b639b9b87d41ea, type: 3}
   m_PrefabInstance: {fileID: 2971420780663224433}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1332031755054898774}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4979498a2642d014180f4349c39d99c4, type: 3}

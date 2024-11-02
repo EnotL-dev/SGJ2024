@@ -9,7 +9,23 @@ namespace BattleSystem
         [SerializeField] private List<StateBehaviour> _enemies = new List<StateBehaviour>();
         [SerializeField] private StateBehaviour _knight;
         [SerializeField] private float _enemyWaiting = 2f;
+        [SerializeField] private TransitionScript _darkBackGround;
         private KnightTargetSwitcher _targetSwitcher;
+        private bool _continue = true;
+
+        public void Defeat()
+        {
+            Debug.Log("Defeat");
+            _continue = false;
+            _darkBackGround.gameObject.SetActive(true);
+        }
+
+        public void Victory()
+        {
+            Debug.Log("Victory");
+            _continue = false;
+            _darkBackGround.gameObject.SetActive(true);
+        }
 
         private void Start()
         {
@@ -19,13 +35,25 @@ namespace BattleSystem
 
         private IEnumerator EnemyAtacking()
         {
-            while (true)
+            while (_continue)
             {
-                foreach (var enemy in _enemies)
+                for (var i = 0; i < _enemies.Count; i++)
                 {
-                    yield return Attack(enemy);
+                    if (_enemies[i].GetCurrentState() is not Dead)
+                        yield return Attack(_enemies[i]);
+                    else
+                    {
+                        _enemies.RemoveAt(i);
+                        i--;
+                    }
                 }
-                _targetSwitcher.SwitchEnemy();
+                if (_enemies.Count == 0)
+                {
+                    Victory();
+                    break;
+                }
+
+                _targetSwitcher.SwitchEnemy(_enemies[Random.Range(0, _enemies.Count)].GetComponent<Health>());
                 yield return Attack(_knight);
             }
         }

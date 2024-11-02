@@ -5,22 +5,32 @@ namespace BattleSystem
 {
     public class Health : MonoBehaviour
     {
-        [System.Serializable]
-        public class TwoIntEvent : UnityEvent<int, int> { }
-
-        [SerializeField] private int _count = 100;
+        [SerializeField] protected int _count = 100;
+        [SerializeField] private HpBar _hpBar;
         [SerializeField] private UnityEvent _onHealthOver;
-        [SerializeField] private TwoIntEvent _onHealthUpdate;
-        private int _currentValue;
+        protected int _currentValue;
 
-        public void TakeDamage(int value)
+        public void SetCount(int value)
+        {
+            _count = value;
+            _currentValue = value;
+        }
+
+        public virtual void TakeDamage(int value)
         {
             _currentValue -= value;
-            _onHealthUpdate?.Invoke(_currentValue, _count);
-            if (value <= 0)
+            _hpBar.UpdateValue(_currentValue, _count);
+            //_onHealthUpdate?.Invoke(_currentValue, _count);
+            if (_currentValue <= 0)
             {
-                _onHealthOver?.Invoke();
+                Dead();
             }
+        }
+
+        protected virtual void Dead()
+        {
+            _onHealthOver?.Invoke();
+            Debug.Log("Dead");
         }
 
         private void Start()

@@ -9,9 +9,10 @@ namespace BattleSystem
         [SerializeField] private List<Health> _enemies = new List<Health>();
         private StateBehaviour _states;
 
-        public void SwitchEnemy()
+        public void SwitchEnemy(Health enemy)
         {
-            _states.Target = _enemies[Random.Range(0, _enemies.Count)];
+            //_states.Target = _enemies[Random.Range(0, _enemies.Count)];
+            _states.Target = enemy;
         }
 
         private void Awake()
