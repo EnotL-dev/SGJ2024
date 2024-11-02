@@ -51,7 +51,7 @@ public class ChoiceManager : MonoBehaviour
     {
         foreach (GameObject obj in choices[id].activateObjs)
         {
-            obj.SetActive(true);
+            obj.SetActive(false);
         }
     }
 }

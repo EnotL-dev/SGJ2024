@@ -63,11 +63,20 @@ public class DialogManager : MonoBehaviour
         StartCoroutine(startMessage());
     }
 
+    private float _timer = 0;
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+        if (_timer > 0.5f)
         {
-            nextMessage();
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+            {
+                _timer = 0;
+                nextMessage();
+            }
+        }
+        else
+        {
+            _timer += Time.deltaTime;
         }
     }
 
@@ -77,6 +86,7 @@ public class DialogManager : MonoBehaviour
         {
             name_text.color = new Color(name_text.color.r, name_text.color.g, name_text.color.b, 0);
             message_text.color = new Color(message_text.color.r, message_text.color.g, message_text.color.b, 0);
+            panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, 1);
 
             name_text.text = messagesConstructor[mess_num].character_name;
             message_text.text = messagesConstructor[mess_num].message;
