@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e2d4671221c6b646b192ee83ed85dfe
+guid: 52331efc11cb4a44b9711af0fd8dbc58
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7149659812286275128
-    second: poil_0
+      213: 6150401601629840134
+    second: spear_iron_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: poil_0
+      name: spear_iron_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 23
-        height: 23
+        x: 5
+        y: 5
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83e953008b1b83360800000000000000
-      internalID: 7149659812286275128
+      spriteID: 603e323abad9a5550800000000000000
+      internalID: 6150401601629840134
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      poil_0: 7149659812286275128
+      spear_iron_0: 6150401601629840134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

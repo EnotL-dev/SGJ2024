@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e2d4671221c6b646b192ee83ed85dfe
+guid: a200bbc115b8f7a4b86c6c10189a127f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7149659812286275128
-    second: poil_0
+      213: -7568809607697508324
+    second: poison_antidote_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: poil_0
+      name: poison_antidote_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 23
-        height: 23
+        x: 7
+        y: 7
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83e953008b1b83360800000000000000
-      internalID: 7149659812286275128
+      spriteID: c1850a853cf26f690800000000000000
+      internalID: -7568809607697508324
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      poil_0: 7149659812286275128
+      poison_antidote_0: -7568809607697508324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

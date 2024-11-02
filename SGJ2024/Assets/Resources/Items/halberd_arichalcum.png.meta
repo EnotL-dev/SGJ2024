@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e2d4671221c6b646b192ee83ed85dfe
+guid: 7953de5f26cd3c34e947dd48ef392e9b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7149659812286275128
-    second: poil_0
+      213: -1324489988285530803
+    second: halberd_arichalcum_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,12 +152,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: poil_0
+      name: halberd_arichalcum_0
       rect:
         serializedVersion: 2
         x: 4
-        y: 4
-        width: 23
+        y: 5
+        width: 25
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83e953008b1b83360800000000000000
-      internalID: 7149659812286275128
+      spriteID: d4dfda38f577e9de0800000000000000
+      internalID: -1324489988285530803
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      poil_0: 7149659812286275128
+      halberd_arichalcum_0: -1324489988285530803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

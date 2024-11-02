@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e2d4671221c6b646b192ee83ed85dfe
+guid: fe0359327b3962c4b9628860a9f024c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7149659812286275128
-    second: poil_0
+      213: 351064251137635104
+    second: shield_arichalcum_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,12 +152,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: poil_0
+      name: shield_arichalcum_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 5
         y: 4
-        width: 23
+        width: 22
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83e953008b1b83360800000000000000
-      internalID: 7149659812286275128
+      spriteID: 023b56e831b3fd400800000000000000
+      internalID: 351064251137635104
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      poil_0: 7149659812286275128
+      shield_arichalcum_0: 351064251137635104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

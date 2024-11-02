@@ -158,9 +158,9 @@ TextureImporter:
         x: 0
         y: 0
         width: 40
-        height: 46
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -173,11 +173,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: backpackGround_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 40
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fba4b4291cc714595fe90a25cc4526
+      internalID: -1385867843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8006d14763ab19c439433d9321213f49
     internalID: 0
     vertices: []
     indices: 
@@ -188,6 +210,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       backpackGround_0: -5578752415169357806
+      backpackGround_1: -1385867843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
