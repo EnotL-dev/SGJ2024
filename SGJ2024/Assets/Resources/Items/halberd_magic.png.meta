@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e2d4671221c6b646b192ee83ed85dfe
+guid: db49a00fde4b8754abebfe964ccf1d7f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7149659812286275128
-    second: poil_0
+      213: -4014509851679186595
+    second: halberd_magic_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: poil_0
+      name: halberd_magic_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 3
         y: 4
-        width: 23
-        height: 23
+        width: 27
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83e953008b1b83360800000000000000
-      internalID: 7149659812286275128
+      spriteID: d512b574f889948c0800000000000000
+      internalID: -4014509851679186595
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      poil_0: 7149659812286275128
+      halberd_magic_0: -4014509851679186595
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
