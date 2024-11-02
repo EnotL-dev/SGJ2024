@@ -12,8 +12,19 @@ namespace BattleSystem
         [SerializeField] private float _moveTime = 1f;
         [SerializeField] private float _maxDistance = 1f;
         [SerializeField] private int _damage;
+        [SerializeField] private SpriteRenderer _sprite;
         protected State[] _states;
         protected State _currentState;
+
+        public void SetDeadState()
+        {
+            SwitchState<Dead>();
+        }
+
+        public void SetDamage(int value)
+        {
+            _damage = value;
+        }
 
         public State GetCurrentState()
         {
@@ -41,12 +52,13 @@ namespace BattleSystem
             _currentState = newState;
         }
 
-        private void Start()
+        private void Awake()
         {
-            _states = new State[2]
+            _states = new State[3]
             {
                 new MeleeAttack(this, _animMove, _moveTime, _maxDistance, _damage),
-                new Idle(this)
+                new Idle(this),
+                new Dead(this, _sprite),
             };
             SwitchState<Idle>();
         }
