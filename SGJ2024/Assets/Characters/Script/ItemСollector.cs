@@ -10,18 +10,10 @@ namespace BattleSystem
 
         [SerializeField] private ItemCollectedEvent _onCollect;
 
-        public void Collect(Item item)
+        public virtual void Collect(Item item)
         {
             _onCollect?.Invoke(item);
             Debug.Log("Collected");
         }
-
-        //private void OnTriggerEnter2D(Collider2D other)
-        //{
-        //    if (other.TryGetComponent(out FlyingItem item))
-        //    {
-        //        item.gameObject.SetActive(false);
-        //    }
-        //}
     }
 }

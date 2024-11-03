@@ -1,17 +1,14 @@
 using BattleSystem;
 using UnityEngine;
 
-public class KnightStats : MonoBehaviour
+public class KnightStats : Stats
 {
-    [SerializeField] private Health _health;
-    [SerializeField] private StateBehaviour _states;
+    public override int Damage { get => (_item != null) ? base.Damage + _item.damage : base.Damage; }
     private int _level = 1;
-    private int _healthCount = 50;
-    private int _damage = 1;
+    private Item _item;
 
-    private void Start()
+    public void SetItem(Item item)
     {
-        _health.SetCount(_healthCount);
-        _states.SetDamage(_damage);
+        _item = item;
     }
 }

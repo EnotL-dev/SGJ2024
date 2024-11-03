@@ -4431,6 +4431,10 @@ PrefabInstance:
       propertyPath: _collector
       value: 
       objectReference: {fileID: 6470221456438887891}
+    - target: {fileID: 3786935075488327608, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
+      propertyPath: _inventory
+      value: 
+      objectReference: {fileID: 1764525158}
     - target: {fileID: 8841975525987658772, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.16
