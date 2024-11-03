@@ -52,10 +52,10 @@ public class InventoryManager : MonoBehaviour
         if (slots[slot_num].sprite != null && slot_num >= 0) //Вторая проверка (допустим?)
         {
             items[slot_num] = new DoubleList(0,0);
-        }
-        else
-        {
-            Debug.Log("НЕВОЗМОЖНО!");
+
+            slots[slot_num].transform.GetChild(0).gameObject.GetComponent<DropAndDrag>().id_item = 0;
+            slots[slot_num].transform.GetChild(0).gameObject.GetComponent<DropAndDrag>().durability_item = 0;
+            slots[slot_num].transform.GetChild(0).gameObject.SetActive(false);
         }
     }
 
