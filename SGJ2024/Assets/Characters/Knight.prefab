@@ -279,7 +279,7 @@ MonoBehaviour:
   _damage: 1
   _armor: 0
   _itemTrower: {fileID: 8443167564661728610}
-  _playerCollector: {fileID: 0}
+  _battle: {fileID: 0}
 --- !u!114 &8622981279301511662
 MonoBehaviour:
   m_ObjectHideFlags: 0

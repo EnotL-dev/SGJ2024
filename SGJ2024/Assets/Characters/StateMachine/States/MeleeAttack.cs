@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace BattleSystem
@@ -23,19 +24,42 @@ namespace BattleSystem
         {
             base.StartState();
             _startPosition = _switcher.transform.position;
-            _switcher.StartCoroutine(DoAttack(_switcher.Target));
+
+            bool weapon = false;
+            bool axe = false;
+            KnightStats knightStats = null;
+            if (_stats is KnightStats)
+            {
+                knightStats = _stats as KnightStats;
+                if (knightStats.GetItemType() == KnightStats.ItemType.weapon)
+                {
+                    weapon = true;
+                    axe = knightStats.ItemIsAxe();
+                }
+            }
+            if (weapon && axe)
+            {
+                DoAttack(_switcher.GetAllEnemiyes(), knightStats);
+            }
+            else
+                _switcher.StartCoroutine(DoAttack(_switcher.Target, knightStats, weapon));
         }
 
-        private IEnumerator DoAttack(Health target)
+        private void DoAttack(List<Health> targets, KnightStats knightStats)
+        {
+            foreach (Health target in targets)
+            {
+                target.TakeDamage(_stats.Damage);
+            }
+            knightStats.UseItem();
+        }
+
+        private IEnumerator DoAttack(Health target, KnightStats knightStats, bool weapon)
         {
             yield return Forward((target.transform.position - _switcher.transform.position).normalized * _maxDistance + target.transform.position);
             target.TakeDamage(_stats.Damage);
-            if (_stats is KnightStats)
-            {
-                var knightStats = _stats as KnightStats;
-                if (knightStats.GetWeaponType() == KnightStats.ItemType.weapon)
-                    knightStats.UseItem();
-            }
+            if (weapon)
+                knightStats.UseItem();
             yield return Backward();
         }
 

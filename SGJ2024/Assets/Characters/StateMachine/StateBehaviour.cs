@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace BattleSystem
     {
         public Health Target { get => _target; set { _target = value; } }
         [SerializeField] private Health _target;
+        [SerializeField] private List<Health> _allTargets = new List<Health>();
         [Space, Tooltip("Attack")]
         [SerializeField] private AnimationCurve _animMove;
         [SerializeField] private float _moveTime = 1f;
@@ -21,10 +23,10 @@ namespace BattleSystem
             SwitchState<Dead>();
         }
 
-        //public void SetDamage(int value)
-        //{
-        //    _damage = value;
-        //}
+        public List<Health> GetAllEnemiyes()
+        {
+            return _allTargets;
+        }
 
         public State GetCurrentState()
         {

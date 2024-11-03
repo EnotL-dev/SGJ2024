@@ -14,7 +14,21 @@ namespace BattleSystem
         [SerializeField] private WarningMessage _warningMessage;
         [SerializeField] private float _warningWaitingTime = 1f;
         private KnightTargetSwitcher _targetSwitcher;
+        private Health _knightHealth;
+        private bool _poisoning = true;
+        private int _poisoningDamage = 1;
         private bool _continue = true;
+
+        public void Poison(int damage)
+        {
+            _poisoning = true;
+            _poisoningDamage = damage;
+        }
+
+        public void PoisonStop()
+        {
+            _poisoning = false;
+        }
 
         public void Defeat()
         {
@@ -34,6 +48,7 @@ namespace BattleSystem
         {
             StartCoroutine(EnemyAtacking());
             _targetSwitcher = _knight.GetComponent<KnightTargetSwitcher>();
+            _knightHealth = _knight.GetComponent<Health>();
         }
 
         private void Shuffle<T>(List<T> list)
@@ -81,11 +96,18 @@ namespace BattleSystem
                     break;
                 }
                 _targetSwitcher.SwitchEnemy(_enemies);
+                Poison();
                 _warningMessage.Show();
                 yield return new WaitForSeconds(_warningWaitingTime);
                 _warningMessage.Hide();
                 yield return Attack(_knight);
             }
+        }
+
+        private void Poison()
+        {
+            if (_poisoning)
+                _knightHealth.TakeDamagePoison(_poisoningDamage);
         }
 
         private IEnumerator Attack(StateBehaviour actor)

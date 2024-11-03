@@ -181,7 +181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sprite: {fileID: 5326487366032304833}
-  _inventory: {fileID: 0}
 --- !u!114 &6712180619400918159
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ namespace BattleSystem
     public class PlayerCollector : Item—ollector
     {
         [SerializeField] private InventoryManager _inventory;
+        [SerializeField] private SaverScript _saver;
 
         public bool AreFreePlaces()
         {
@@ -16,6 +17,7 @@ namespace BattleSystem
                     return true;
             }
             return false;
+            
         }
 
         private void PasteItem(ItemContainer itemContainer, Image slotImage)
@@ -32,19 +34,34 @@ namespace BattleSystem
             //makeSound(item.gameObject.GetComponent<DropAndDrag>().id_item);
         }
 
+        //private KilledMonsters 
+
         public override void Collect(ItemContainer item)
         {
-            var slots = _inventory.returnSlots();
-            foreach (var image in slots)
+            if (item.Item.id > 1)
             {
-                if (!image.transform.GetChild(0).gameObject.activeInHierarchy)
+                var slots = _inventory.returnSlots();
+                foreach (var image in slots)
                 {
-                    PasteItem(item, image);
-                    Debug.Log("Paste");
-                    break;
+                    if (!image.transform.GetChild(0).gameObject.activeInHierarchy)
+                    {
+                        PasteItem(item, image);
+                        Debug.Log("Paste");
+                        break;
+                    }
                 }
             }
-            base.Collect(item);
+            //else if (item.Item.id <= -10)
+            //{
+            //    switch (item.Item.id)
+            //    {
+            //        case -10:
+            //            _saver.addKilledMonsters = new KilledMonsters()
+            //    }
+
+              
+            //}
+                base.Collect(item);
         }
     }
 }
