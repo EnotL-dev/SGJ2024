@@ -8,6 +8,9 @@ public class InformationPanelScript : MonoBehaviour
     [SerializeField] private Text cost_name;
     public void informate(int id, int durability)
     {
+        if (id == 0)
+            return;
+
         ItemList itemList = ItemList.GetInstance();
         Item item = itemList.returnItemById(id);
 
