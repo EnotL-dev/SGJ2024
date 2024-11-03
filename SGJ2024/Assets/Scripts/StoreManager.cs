@@ -6,6 +6,7 @@ public class StoreManager : MonoBehaviour
     [SerializeField] private int money;
     [SerializeField] private Text money_text;
     [SerializeField] private Image[] slots;
+    [SerializeField] private Image sellslot;
     [Space(20)]
     [SerializeField] private KilledMonsters killedMonsters;
 
@@ -17,6 +18,7 @@ public class StoreManager : MonoBehaviour
     public void buying(int cost)
     {
         money -= cost;
+        money_text.text = $"{money}";
     }
 
     private void OnEnable()
@@ -36,7 +38,7 @@ public class StoreManager : MonoBehaviour
         PlayerData loadedData = SaveManager.LoadPlayerData();
         money = loadedData.money;
         killedMonsters = loadedData.killedMonsters;
-        money_text.text = $"Кошелек\n{money}";
+        money_text.text = $"{money}";
     }
 
     public void sell_kills()
@@ -54,7 +56,7 @@ public class StoreManager : MonoBehaviour
             addMoney += killedMonsters.exodus * 240;
 
             money += addMoney;
-            money_text.text = $"Кошелек\n{money}";
+            money_text.text = $"{money}";
         }
         else
         {
