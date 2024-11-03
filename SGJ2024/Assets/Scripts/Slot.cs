@@ -20,7 +20,8 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
     [SerializeField] private AudioClip shield_sound;
     [SerializeField] private AudioClip potion_sound;
 
-    private AudioSource audioSource;
+    private AudioSource audioSourceInventory;
+
     private void Awake()
     {
         try
@@ -28,7 +29,7 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
             storeManager = GameObject.FindWithTag("StoreManager").GetComponent<StoreManager>();
         } catch { }
         inventoryManager = GameObject.FindWithTag("InventoryManager").GetComponent<InventoryManager>();
-        audioSource = GameObject.FindWithTag("AudioSoundInventory").GetComponent<AudioSource>();
+        audioSourceInventory = GameObject.FindWithTag("AudioSoundInventory").GetComponent<AudioSource>();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -53,10 +54,14 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
         {
             Transform item = eventData.pointerDrag.transform;
 
-            if ((item.gameObject.tag == "store_slot" && gameObject.tag == "inv_slot") || (item.gameObject.tag == "inv_slot" && gameObject.tag == "inv_slot"))
+            if ((item.gameObject.tag == "store_slot" && gameObject.tag == "inv_slot") || (item.gameObject.tag == "inv_slot" && gameObject.tag == "inv_slot") || (item.gameObject.tag == "inv_slot" && gameObject.tag == "store_slot" && gameObject.name == "SlotSell"))
             {
                 Transform child = transform.GetChild(0);
-                if(item.gameObject.tag == "inv_slot" && gameObject.tag == "inv_slot")
+                if(gameObject.name == "SlotSell")
+                {
+                    storeManager.sell_item(item.gameObject.GetComponent<DropAndDrag>().mySlot.gameObject.GetComponent<Image>());
+                }
+                else if(item.gameObject.tag == "inv_slot" && gameObject.tag == "inv_slot")
                 {
                     change_inventory_slot(item, child);
                 }
@@ -117,6 +122,10 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
 
             Debug.Log($"Куплен предмет {itemList.returnItemById(id_item).name}");
         }
+        else
+        {
+            storeManager.audioSourceStore.PlayOneShot(storeManager.buy_abort_sound);
+        }
     }
 
     private void spawnPanel()
@@ -149,19 +158,19 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
         {
             if(id == 1 || id == 3 || id == 4 || id == 6 || id == 7 || id == 9 || id == 10 || id == 12)
             {
-                audioSource.PlayOneShot(sword_sound);
+                audioSourceInventory.PlayOneShot(sword_sound);
             }
             else if (id == 2 || id == 5 || id == 8 || id == 11)
             {
-                audioSource.PlayOneShot(spear_sound);
+                audioSourceInventory.PlayOneShot(spear_sound);
             }
             else if (id < 17)
             {
-                audioSource.PlayOneShot(shield_sound);
+                audioSourceInventory.PlayOneShot(shield_sound);
             }
             else if (id > 16)
             {
-                audioSource.PlayOneShot(potion_sound);
+                audioSourceInventory.PlayOneShot(potion_sound);
             }
         }
     }

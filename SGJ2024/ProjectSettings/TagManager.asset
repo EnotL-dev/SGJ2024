@@ -9,6 +9,7 @@ TagManager:
   - inv_slot
   - StoreManager
   - InventoryManager
+  - AudioSoundStore
   layers:
   - Default
   - TransparentFX

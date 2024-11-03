@@ -13,13 +13,17 @@ public class DropAndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     [HideInInspector] public Transform mySlot;
     public int id_item = 0;
     public int durability_item = 0;
+    [SerializeField] private AudioClip takeitem_sound;
 
     [Header("Требует данный эллемент для боев")]
     [SerializeField] private RaycastElementsUI raycastElementsUI;
 
+    private AudioSource audioSourceInventory;
+
     private void Start()
     {
         _itemTrower = FindAnyObjectByType<ItemTrower>();
+        audioSourceInventory = GameObject.FindWithTag("AudioSoundInventory").GetComponent<AudioSource>();
     }
 
     private void Awake()
@@ -34,6 +38,8 @@ public class DropAndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
         var slotTranform = rectTransform.parent;
         slotTranform.SetAsLastSibling();
         canvasGroup.blocksRaycasts = false;
+
+        audioSourceInventory.PlayOneShot(takeitem_sound);
     }
 
     public void OnDrag(PointerEventData eventData)
