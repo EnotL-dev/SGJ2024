@@ -10,6 +10,7 @@ namespace BattleSystem
         [SerializeField] private Transform _rotor;
         [SerializeField] private float _scaleIncrease = 2f;
         [SerializeField] private AnimationCurve _scaleCurve;
+        [SerializeField] private SpriteRenderer _sprite;
         private Item—ollector _collector;
         private Transform _target;
         private Transform _parent;
@@ -21,6 +22,7 @@ namespace BattleSystem
         public void SetItem(int itemId)
         {
             _item = ItemList.GetInstance().returnItemById(itemId);
+            _sprite.sprite = Resources.Load<Sprite>(_item.spriteLink);
         }
 
         public void SetCollector(Item—ollector Òollector)
@@ -53,7 +55,7 @@ namespace BattleSystem
             else 
             {
                 _time = 0;
-                _collector.Collect(this);
+                _collector.Collect(_item);
                 gameObject.SetActive(false);
             }
         }

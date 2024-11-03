@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.8217411, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   _rotationSpeed: 250
   _animationTime: 0.5
   _rotor: {fileID: 1046783862893989584}
-  _scaleIncrease: 2
+  _scaleIncrease: 10
   _scaleCurve:
     serializedVersion: 2
     m_Curve:
@@ -170,6 +170,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _sprite: {fileID: 5326487366032304833}
 --- !u!61 &3411846303366611211
 BoxCollider2D:
   m_ObjectHideFlags: 0

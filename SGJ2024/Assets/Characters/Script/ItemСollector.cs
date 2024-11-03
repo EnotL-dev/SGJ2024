@@ -2,14 +2,17 @@ using UnityEngine;
 using UnityEngine.Events;
 
 namespace BattleSystem
-{
+{    
     public class Item—ollector : MonoBehaviour
     {
-        [SerializeField] private UnityEvent _onCollect;
+        [System.Serializable]
+        public class ItemCollectedEvent : UnityEvent<Item> { }
 
-        public void Collect(FlyingItem item)
+        [SerializeField] private ItemCollectedEvent _onCollect;
+
+        public void Collect(Item item)
         {
-            _onCollect?.Invoke();
+            _onCollect?.Invoke(item);
             Debug.Log("Collected");
         }
 
