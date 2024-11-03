@@ -182,6 +182,7 @@ MonoBehaviour:
   _count: 100
   _hpBar: {fileID: 5026999370023259990}
   _damageView: {fileID: 997014201866113501}
+  _stats: {fileID: 5537778099398455542}
   _onHealthOver:
     m_PersistentCalls:
       m_Calls:
@@ -249,7 +250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: {fileID: 6954084996003321850}
-  _damage: 1
+  _damage: 20
+  _armor: 0
 --- !u!1001 &1391309077356419220
 PrefabInstance:
   m_ObjectHideFlags: 0

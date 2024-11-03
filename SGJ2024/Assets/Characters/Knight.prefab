@@ -275,7 +275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: {fileID: 8622981279301511662}
-  _damage: 10
+  _damage: 1
+  _armor: 0
 --- !u!114 &8622981279301511662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +292,7 @@ MonoBehaviour:
   _count: 100
   _hpBar: {fileID: 4846682260729575825}
   _damageView: {fileID: 6110077594502461793}
+  _stats: {fileID: 5766062835771264927}
   _onHealthOver:
     m_PersistentCalls:
       m_Calls:

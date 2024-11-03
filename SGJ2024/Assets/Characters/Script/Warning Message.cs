@@ -13,8 +13,8 @@ namespace BattleSystem
         private bool _isShowing = false;
         private Vector3 _startPosition;
         private Coroutine _active;
-        private bool music = true;
-        private bool sound = true;
+       // private bool music = true;
+       // private bool sound = true;
         private Color _saveColor;
 
         public void Show()

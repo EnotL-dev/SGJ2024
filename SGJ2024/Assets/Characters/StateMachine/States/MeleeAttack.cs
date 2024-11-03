@@ -8,15 +8,15 @@ namespace BattleSystem
         private AnimationCurve _animMove;
         private float _moveTime;
         private float _maxDistance;
-        private int _damage;
+        private Stats _stats;
         private Vector3 _startPosition;
 
-        public MeleeAttack(StateBehaviour switcher, AnimationCurve animMove, float moveTime, float maxDistance, int damage) : base(switcher)
+        public MeleeAttack(StateBehaviour switcher, AnimationCurve animMove, float moveTime, float maxDistance, Stats stats) : base(switcher)
         {
             _animMove = animMove;
             _moveTime = moveTime;
             _maxDistance = maxDistance;
-            _damage = damage;   
+            _stats = stats;   
         }
 
         public override void StartState()
@@ -29,7 +29,7 @@ namespace BattleSystem
         private IEnumerator DoAttack(Health target)
         {
             yield return Forward((target.transform.position - _switcher.transform.position).normalized * _maxDistance + target.transform.position);
-            target.TakeDamage(_damage);
+            target.TakeDamage(_stats.Damage);
             yield return Backward();
         }
 

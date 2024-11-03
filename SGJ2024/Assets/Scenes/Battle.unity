@@ -5364,6 +5364,10 @@ PrefabInstance:
       value: Knight
       objectReference: {fileID: 0}
     - target: {fileID: 5766062835771264927, guid: f6c94075874355d4ba395478f808c753, type: 3}
+      propertyPath: _damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766062835771264927, guid: f6c94075874355d4ba395478f808c753, type: 3}
       propertyPath: _health
       value: 
       objectReference: {fileID: 6470221456438887885}
