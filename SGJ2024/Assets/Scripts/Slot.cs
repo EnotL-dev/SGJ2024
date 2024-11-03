@@ -60,6 +60,7 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
                 if(gameObject.name == "SlotSell")
                 {
                     storeManager.sell_item(item.gameObject.GetComponent<DropAndDrag>().mySlot.gameObject.GetComponent<Image>());
+                    item.localPosition = Vector3.zero;
                 }
                 else if(item.gameObject.tag == "inv_slot" && gameObject.tag == "inv_slot")
                 {
