@@ -56,7 +56,7 @@ namespace BattleSystem
         {
             _states = new State[3]
             {
-                new MeleeAttack(this, _animMove, _moveTime, _maxDistance, _stats.Damage),
+                new MeleeAttack(this, _animMove, _moveTime, _maxDistance, _stats),
                 new Idle(this),
                 new Dead(this, _sprite),
             };

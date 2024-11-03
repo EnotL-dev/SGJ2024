@@ -4480,6 +4480,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
+--- !u!114 &1833256925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3786935075488327608, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
+  m_PrefabInstance: {fileID: 1800162840}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a5b304901be5b4099d4fb2b8841f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1833256931 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8841975525987658772, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
+  m_PrefabInstance: {fileID: 1800162840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1858274273
 GameObject:
   m_ObjectHideFlags: 0
@@ -5364,9 +5380,29 @@ PrefabInstance:
       value: Knight
       objectReference: {fileID: 0}
     - target: {fileID: 5766062835771264927, guid: f6c94075874355d4ba395478f808c753, type: 3}
+      propertyPath: _damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766062835771264927, guid: f6c94075874355d4ba395478f808c753, type: 3}
       propertyPath: _health
       value: 
       objectReference: {fileID: 6470221456438887885}
+    - target: {fileID: 5766062835771264927, guid: f6c94075874355d4ba395478f808c753, type: 3}
+      propertyPath: _itemDropper
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766062835771264927, guid: f6c94075874355d4ba395478f808c753, type: 3}
+      propertyPath: _playerCollector
+      value: 
+      objectReference: {fileID: 1833256925}
+    - target: {fileID: 8443167564661728610, guid: f6c94075874355d4ba395478f808c753, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1833256931}
+    - target: {fileID: 8443167564661728610, guid: f6c94075874355d4ba395478f808c753, type: 3}
+      propertyPath: _collector
+      value: 
+      objectReference: {fileID: 1833256925}
     - target: {fileID: 8622981279301511662, guid: f6c94075874355d4ba395478f808c753, type: 3}
       propertyPath: _battle
       value: 
