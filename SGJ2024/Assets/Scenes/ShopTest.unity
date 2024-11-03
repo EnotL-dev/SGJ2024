@@ -8443,6 +8443,7 @@ MonoBehaviour:
   - {fileID: 425127136}
   - {fileID: 129322509}
   - {fileID: 855086795}
+  sellslot: {fileID: 1316229135}
   killedMonsters:
     goblins: 0
     skeletons: 0
