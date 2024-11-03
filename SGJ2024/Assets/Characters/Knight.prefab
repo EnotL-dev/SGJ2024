@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 8622981279301511662}
   - component: {fileID: 4180337017099146350}
   - component: {fileID: 2723931004636572821}
+  - component: {fileID: 8443167564661728610}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -277,6 +278,8 @@ MonoBehaviour:
   _health: {fileID: 8622981279301511662}
   _damage: 1
   _armor: 0
+  _itemTrower: {fileID: 8443167564661728610}
+  _playerCollector: {fileID: 0}
 --- !u!114 &8622981279301511662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,6 +397,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.63, y: 0.730763}
   m_EdgeRadius: 0
+--- !u!114 &8443167564661728610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569614786188478277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c75ba422eedfe54ebe6f5f2588b8b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefab: {fileID: 5700417552969976755, guid: 5d9877bc4ec9c8942800de66900a6849, type: 3}
+  _poolSize: 5
+  _target: {fileID: 0}
+  _collector: {fileID: 0}
+  _reload: 0
 --- !u!1 &7610737486861948009
 GameObject:
   m_ObjectHideFlags: 0
