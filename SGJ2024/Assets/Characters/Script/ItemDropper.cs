@@ -12,14 +12,14 @@ namespace BattleSystem
         public void Drop()
         {
             int selected = Random.Range(0, _lyingItem.Count);
-            DropOn(_itemId, _lyingItem[selected]);
+            DropOn(new ItemContainer(_itemId, ItemList.GetInstance().returnItemById(_itemId).durability), _lyingItem[selected]);
         }
 
-        public void DropOn(int itemId, Item—ollector target)
+        public void DropOn(ItemContainer item, Item—ollector target)
         {
             _flyingItem.SetTarget(target.transform);
             _flyingItem.SetCollector(target);
-            _flyingItem.SetItem(_itemId);
+            _flyingItem.SetItem(item);
             _flyingItem.gameObject.SetActive(true);
         }
     }

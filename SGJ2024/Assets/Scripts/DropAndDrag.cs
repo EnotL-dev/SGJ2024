@@ -57,7 +57,7 @@ public class DropAndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
 
             if (uiElementsUnderMouse.Count < 1)
             {
-                _itemTrower.Launch(id_item);
+                _itemTrower.Launch(new ItemContainer(id_item, durability_item));
                 InventoryManager inventoryManager = GameObject.FindWithTag("InventoryManager").GetComponent<InventoryManager>();
                 inventoryManager.removeItem(mySlot.GetComponent<Image>());
             }

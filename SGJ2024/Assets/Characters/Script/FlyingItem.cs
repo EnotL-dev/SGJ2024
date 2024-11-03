@@ -16,13 +16,14 @@ namespace BattleSystem
         private Transform _parent;
         private Vector3 _startPosition;
         private float _time;
-        private Item _item;
+        private ItemContainer _item;
         //private Vector2 _position;
 
-        public void SetItem(int itemId)
+        public void SetItem(ItemContainer itemConteiner)
         {
-            _item = ItemList.GetInstance().returnItemById(itemId);
-            _sprite.sprite = Resources.Load<Sprite>(_item.spriteLink);
+            _item = itemConteiner;
+            var item = ItemList.GetInstance().returnItemById(itemConteiner.Item.id);
+            _sprite.sprite = Resources.Load<Sprite>(item.spriteLink);
         }
 
         public void SetCollector(Item—ollector Òollector)
