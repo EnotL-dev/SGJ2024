@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -557,6 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -760,6 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -1193,6 +1196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -1396,6 +1400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -1599,6 +1604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -1899,6 +1905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -2102,6 +2109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -2208,6 +2216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -2314,6 +2323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -2592,6 +2602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3064,6 +3075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3267,6 +3279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3373,6 +3386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3576,6 +3590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3779,6 +3794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3885,6 +3901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -4580,6 +4597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -4686,6 +4704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -4792,6 +4811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -5189,6 +5209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -5571,6 +5592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -5677,6 +5699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -5977,6 +6000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -6471,6 +6495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -6577,6 +6602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -6825,6 +6851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -7028,6 +7055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -7231,6 +7259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -7531,6 +7560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -7809,6 +7839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -7994,6 +8025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8197,6 +8229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8303,6 +8336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8409,6 +8443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8478,7 +8513,7 @@ AudioSource:
   m_GameObject: {fileID: 1795441336}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5890766530672440945, guid: f8cf1059be9d53f42a3cbd52dea53178, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -8827,6 +8862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8896,7 +8932,7 @@ AudioSource:
   m_GameObject: {fileID: 1915778829}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5890766530672440945, guid: f8cf1059be9d53f42a3cbd52dea53178, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -9273,6 +9309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -9379,6 +9416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -9485,6 +9523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -9558,6 +9597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   add_lv: 0
+  hp: 100
   add_money: 0
   items:
   - id: 1
@@ -9678,6 +9718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
