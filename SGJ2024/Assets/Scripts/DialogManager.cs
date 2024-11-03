@@ -47,20 +47,23 @@ public class DialogManager : MonoBehaviour
 
     public void ChangeConstructor(string name_new_constructor)
     {
-        name_constructor = name_new_constructor;
-        mess_num = 0;
+        if (name_new_constructor != "")
+        {
+            name_constructor = name_new_constructor;
+            mess_num = 0;
 
-        name_text.color = new Color(name_text.color.r, name_text.color.g, name_text.color.b, 0);
-        message_text.color = new Color(message_text.color.r, message_text.color.g, message_text.color.b, 0);
+            name_text.color = new Color(name_text.color.r, name_text.color.g, name_text.color.b, 0);
+            message_text.color = new Color(message_text.color.r, message_text.color.g, message_text.color.b, 0);
 
-        messagesConstructor = messagesClass.returnMessages(name_constructor);
+            messagesConstructor = messagesClass.returnMessages(name_constructor);
 
-        checktriggers();
-        name_text.text = messagesConstructor[mess_num].character_name;
-        message_text.text = messagesConstructor[mess_num].message;
-        mess_num++;
+            checktriggers();
+            name_text.text = messagesConstructor[mess_num].character_name;
+            message_text.text = messagesConstructor[mess_num].message;
+            mess_num++;
 
-        StartCoroutine(startMessage());
+            StartCoroutine(startMessage());
+        }
     }
 
     private float _timer = 0;
