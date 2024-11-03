@@ -22,7 +22,7 @@ public class InformationPanelScript : MonoBehaviour
         }
         if (item.durability > 0)
         {
-            prepare_description += $"<color=yellow>Прочность: {item.durability}/{durability}</color>\n";
+            prepare_description += $"<color=yellow>Прочность: {durability}/{item.durability}</color>\n";
         }
         if(item.id == 3 || item.id == 6 || item.id == 9 || item.id == 12)
         {

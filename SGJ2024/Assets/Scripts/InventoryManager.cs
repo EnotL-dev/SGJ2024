@@ -38,6 +38,7 @@ public class InventoryManager : MonoBehaviour
                 GameObject child = slots[i].transform.GetChild(0).gameObject;
                 child.GetComponent<Image>().sprite = sprite;
                 child.GetComponent<DropAndDrag>().id_item = items[i].id;
+                child.GetComponent<DropAndDrag>().durability_item = items[i].durability;
                 child.SetActive(true);
             }
         }
