@@ -7,6 +7,7 @@ namespace BattleSystem
     {
         [SerializeField] protected int _count = 100;
         [SerializeField] private HpBar _hpBar;
+        [SerializeField] private DamageView _damageView;
         [SerializeField] private UnityEvent _onHealthOver;
         protected int _currentValue;
 
@@ -25,6 +26,7 @@ namespace BattleSystem
         {
             _currentValue -= value;
             _hpBar.UpdateValue(_currentValue, _count);
+            _damageView.Play(value);
             //_onHealthUpdate?.Invoke(_currentValue, _count);
             if (_currentValue <= 0)
             {

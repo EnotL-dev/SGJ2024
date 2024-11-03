@@ -43,6 +43,7 @@ namespace BattleSystem
         {
             item.transform.position = transform.position;
             item.SetTarget(_target);
+            item.SetItem(itemId);
             item.gameObject.SetActive(true);
             // bullet.transform.parent = null;
             var direction = _target.position - transform.position;
