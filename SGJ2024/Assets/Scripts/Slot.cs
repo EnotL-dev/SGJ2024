@@ -89,7 +89,7 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
         }
     }
 
-    private void buy_item(Transform item, Transform child) //Ќе забываем что мы работаем в слоте »Ќ¬≈Ќ“ј–я а не магазина
+    public void buy_item(Transform item, Transform child) //Ќе забываем что мы работаем в слоте »Ќ¬≈Ќ“ј–я а не магазина
     {
         ItemList itemList = ItemList.GetInstance();
         int id_item = item.gameObject.GetComponent<DropAndDrag>().id_item;

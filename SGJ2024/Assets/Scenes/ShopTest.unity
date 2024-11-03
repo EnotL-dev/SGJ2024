@@ -185,6 +185,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &10258152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,7 +237,7 @@ GameObject:
   - component: {fileID: 52995862}
   - component: {fileID: 52995864}
   m_Layer: 5
-  m_Name: Store
+  m_Name: StorePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,7 +278,6 @@ RectTransform:
   - {fileID: 425127134}
   - {fileID: 129322507}
   - {fileID: 855086793}
-  - {fileID: 1316229133}
   m_Father: {fileID: 1554977053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.051312502, y: 0.106000006}
@@ -298,14 +298,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.6255317, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -6719696778882064222, guid: eee344ee3243e4d45823ed1f9db1ede7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 84824620}
   - component: {fileID: 84824619}
   m_Layer: 5
-  m_Name: Slot (9)
+  m_Name: SlotStore10
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -607,6 +607,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &128102747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,7 +659,7 @@ GameObject:
   - component: {fileID: 129322509}
   - component: {fileID: 129322508}
   m_Layer: 5
-  m_Name: Slot (21)
+  m_Name: SlotStore22
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,6 +809,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &152807958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,7 +994,7 @@ GameObject:
   - component: {fileID: 203321713}
   - component: {fileID: 203321712}
   m_Layer: 5
-  m_Name: Slot (15)
+  m_Name: SlotStore16
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1239,6 +1241,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &259658171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1290,7 +1293,7 @@ GameObject:
   - component: {fileID: 264879931}
   - component: {fileID: 264879930}
   m_Layer: 5
-  m_Name: Slot (7)
+  m_Name: SlotStore8
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1440,6 +1443,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &292514593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,7 +1495,7 @@ GameObject:
   - component: {fileID: 305351414}
   - component: {fileID: 305351413}
   m_Layer: 5
-  m_Name: Slot (18)
+  m_Name: SlotStore19
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1641,6 +1645,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &328044816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1939,6 +1944,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &395929908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1990,7 +1996,7 @@ GameObject:
   - component: {fileID: 425127136}
   - component: {fileID: 425127135}
   m_Layer: 5
-  m_Name: Slot (20)
+  m_Name: SlotStore21
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2140,6 +2146,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &490344705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2244,6 +2251,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &494686812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2348,6 +2356,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &498805463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2399,7 +2408,7 @@ GameObject:
   - component: {fileID: 545997426}
   - component: {fileID: 545997425}
   m_Layer: 5
-  m_Name: Slot (10)
+  m_Name: SlotStore11
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2549,6 +2558,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &564536155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2697,7 +2707,7 @@ GameObject:
   - component: {fileID: 618082330}
   - component: {fileID: 618082329}
   m_Layer: 5
-  m_Name: Slot
+  m_Name: SlotStore1
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2794,7 +2804,7 @@ GameObject:
   - component: {fileID: 654201005}
   - component: {fileID: 654201004}
   m_Layer: 5
-  m_Name: Slot (16)
+  m_Name: SlotStore17
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2910,10 +2920,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1554977053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.72900003, y: 0.8563332}
+  m_AnchorMin: {x: 0.70143753, y: 0.85814816}
   m_AnchorMax: {x: 1, y: 0.96000004}
-  m_AnchoredPosition: {x: 45.5, y: 0.069244385}
-  m_SizeDelta: {x: 93.4778, y: -0.046500206}
+  m_AnchoredPosition: {x: 17.678345, y: -0.9307556}
+  m_SizeDelta: {x: 40.4778, y: 1.9534998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &661846541
 MonoBehaviour:
@@ -3019,6 +3029,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &703219074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3070,7 +3081,7 @@ GameObject:
   - component: {fileID: 768875535}
   - component: {fileID: 768875534}
   m_Layer: 5
-  m_Name: Slot (1)
+  m_Name: SlotStore2
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3220,6 +3231,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &772989773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3324,6 +3336,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &824097684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3375,7 +3388,7 @@ GameObject:
   - component: {fileID: 839901219}
   - component: {fileID: 839901218}
   m_Layer: 5
-  m_Name: Slot (2)
+  m_Name: SlotStore3
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3525,6 +3538,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &846162700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3576,7 +3590,7 @@ GameObject:
   - component: {fileID: 855086795}
   - component: {fileID: 855086794}
   m_Layer: 5
-  m_Name: Slot (22)
+  m_Name: SlotStore23
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3726,6 +3740,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &896724578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3830,6 +3845,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &900715283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4251,7 +4267,7 @@ GameObject:
   - component: {fileID: 1002813339}
   - component: {fileID: 1002813338}
   m_Layer: 5
-  m_Name: Slot (8)
+  m_Name: SlotStore9
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4522,6 +4538,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1008986206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4626,6 +4643,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1017997763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4730,6 +4748,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1020647679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4781,7 +4800,7 @@ GameObject:
   - component: {fileID: 1033723456}
   - component: {fileID: 1033723455}
   m_Layer: 5
-  m_Name: Slot (4)
+  m_Name: SlotStore5
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5125,6 +5144,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1093078509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5291,10 +5311,10 @@ RectTransform:
   - {fileID: 1062808842}
   m_Father: {fileID: 1554977053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.72900003, y: 0.275}
+  m_AnchorMin: {x: 0.70143753, y: 0.275}
   m_AnchorMax: {x: 1, y: 0.85814816}
-  m_AnchoredPosition: {x: 47.30072, y: 0.15759277}
-  m_SizeDelta: {x: 97.0803, y: 1.0395012}
+  m_AnchoredPosition: {x: 19.479065, y: 0.15759277}
+  m_SizeDelta: {x: 44.0803, y: 1.0395012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1180244443
 MonoBehaviour:
@@ -5521,6 +5541,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1214214890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5625,6 +5646,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1283147002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5923,6 +5945,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1296670435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5974,7 +5997,7 @@ GameObject:
   - component: {fileID: 1300106864}
   - component: {fileID: 1300106863}
   m_Layer: 5
-  m_Name: Slot (12)
+  m_Name: SlotStore13
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6071,7 +6094,7 @@ GameObject:
   - component: {fileID: 1316229135}
   - component: {fileID: 1316229134}
   m_Layer: 5
-  m_Name: SlotPRODAJA
+  m_Name: SlotSell
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6090,11 +6113,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1794681973}
-  m_Father: {fileID: 52995861}
+  m_Father: {fileID: 1554977053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 294.63, y: -814}
+  m_AnchoredPosition: {x: 1582, y: -969}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316229134
@@ -6265,7 +6288,7 @@ GameObject:
   - component: {fileID: 1394419322}
   - component: {fileID: 1394419321}
   m_Layer: 5
-  m_Name: Slot (5)
+  m_Name: SlotStore6
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6415,6 +6438,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1472265492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6519,6 +6543,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1501868172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6685,6 +6710,7 @@ RectTransform:
   - {fileID: 1812307442}
   - {fileID: 2126221461}
   - {fileID: 52995861}
+  - {fileID: 1316229133}
   - {fileID: 154401289}
   - {fileID: 1008723203}
   - {fileID: 661846540}
@@ -6763,6 +6789,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1583706673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6814,7 +6841,7 @@ GameObject:
   - component: {fileID: 1612794981}
   - component: {fileID: 1612794980}
   m_Layer: 5
-  m_Name: Slot (19)
+  m_Name: SlotStore20
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6964,6 +6991,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1618753356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7015,7 +7043,7 @@ GameObject:
   - component: {fileID: 1620550480}
   - component: {fileID: 1620550479}
   m_Layer: 5
-  m_Name: Slot (6)
+  m_Name: SlotStore7
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7165,6 +7193,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1624052902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7216,7 +7245,7 @@ GameObject:
   - component: {fileID: 1635827219}
   - component: {fileID: 1635827218}
   m_Layer: 5
-  m_Name: Slot (14)
+  m_Name: SlotStore15
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7313,7 +7342,7 @@ GameObject:
   - component: {fileID: 1645659547}
   - component: {fileID: 1645659546}
   m_Layer: 5
-  m_Name: Slot (13)
+  m_Name: SlotStore14
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7463,6 +7492,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1660400400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7630,10 +7660,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2126221461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.73315877, y: 0.08337586}
-  m_AnchorMax: {x: 0.9674762, y: 0.5368792}
-  m_AnchoredPosition: {x: -0.17382812, y: -0.36346436}
-  m_SizeDelta: {x: -0.62384033, y: -0.9577751}
+  m_AnchorMin: {x: 0.629, y: 0}
+  m_AnchorMax: {x: 0.859, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.0000038147}
+  m_SizeDelta: {x: 0.37619781, y: 0.6170006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675009403
 MonoBehaviour:
@@ -7739,6 +7769,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1675257286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7922,6 +7953,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1697920529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7973,7 +8005,7 @@ GameObject:
   - component: {fileID: 1711362779}
   - component: {fileID: 1711362778}
   m_Layer: 5
-  m_Name: Slot (11)
+  m_Name: SlotStore12
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8123,6 +8155,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1771357161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8227,6 +8260,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1777687137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8331,6 +8365,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1794681976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8465,7 +8500,7 @@ GameObject:
   - component: {fileID: 1834243844}
   - component: {fileID: 1834243843}
   m_Layer: 5
-  m_Name: Slot (3)
+  m_Name: SlotStore4
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8615,6 +8650,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1877208108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8980,6 +9016,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1944079553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9084,6 +9121,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1956025882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9188,6 +9226,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &1987621745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9379,6 +9418,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 0}
 --- !u!114 &2015442195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9430,7 +9470,7 @@ GameObject:
   - component: {fileID: 2032504134}
   - component: {fileID: 2032504133}
   m_Layer: 5
-  m_Name: Slot (17)
+  m_Name: SlotStore18
   m_TagString: store_slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9684,10 +9724,10 @@ RectTransform:
   - {fileID: 1675009402}
   m_Father: {fileID: 1554977053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.76347923, y: 0.061370373}
-  m_AnchorMax: {x: 0.95152086, y: 0.23255558}
-  m_AnchoredPosition: {x: -0.9000244, y: 0.50006104}
-  m_SizeDelta: {x: -1.6704102, y: 2.13562}
+  m_AnchorMin: {x: 0.70143753, y: 0.17300001}
+  m_AnchorMax: {x: 0.95635414, y: 0.266}
+  m_AnchoredPosition: {x: 0, y: 1.262085}
+  m_SizeDelta: {x: 0.71650696, y: 1.4757004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2126221462
 MonoBehaviour:
@@ -9711,18 +9751,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2f661ac8a5c051f4289881f37baff400, type: 3}
-    m_FontSize: 50
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 40
-    m_MaxSize: 80
+    m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041A\u043E\u0448\u0435\u043B\u0435\u043A\n100 "
+  m_Text: '100 '
 --- !u!222 &2126221463
 CanvasRenderer:
   m_ObjectHideFlags: 0
