@@ -15,7 +15,13 @@ namespace BattleSystem
         private Transform _parent;
         private Vector3 _startPosition;
         private float _time;
+        private Item _item;
         //private Vector2 _position;
+
+        public void SetItem(int itemId)
+        {
+            _item = ItemList.GetInstance().returnItemById(itemId);
+        }
 
         public void SetCollector(Item—ollector Òollector)
         {

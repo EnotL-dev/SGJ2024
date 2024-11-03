@@ -15,6 +15,19 @@ namespace BattleSystem
         private List<FlyingItem> _pool = new List<FlyingItem>();
         private int _poolIndex = 0;
 
+        public void Launch(int itemId)
+        {
+            if (_isReloading)
+                return;
+            LaunchItem(_pool[_poolIndex], itemId);
+            _poolIndex++;
+            if (_poolIndex > _pool.Count - 1)
+            {
+                _poolIndex = 0;
+            }
+            _isReloading = true;
+        }
+
         private void Start()
         {
             for (var i = 0; i < _poolSize; i++)
@@ -26,7 +39,7 @@ namespace BattleSystem
             }
         }
 
-        private void LaunchItem(FlyingItem item)
+        private void LaunchItem(FlyingItem item, int itemId)
         {
             item.transform.position = transform.position;
             item.SetTarget(_target);
@@ -40,17 +53,17 @@ namespace BattleSystem
 
         private void Update()
         {
-            if (!_isReloading && Input.GetMouseButtonDown(0)) 
-            {
-                LaunchItem(_pool[_poolIndex]);
-                _poolIndex++;
-                if (_poolIndex > _pool.Count - 1)
-                {
-                    _poolIndex = 0;
-                }
-                _isReloading = true;
-            }
-            else if (_isReloading)
+            //if (!_isReloading)
+            //{
+            //    LaunchItem(_pool[_poolIndex]);
+            //    _poolIndex++;
+            //    if (_poolIndex > _pool.Count - 1)
+            //    {
+            //        _poolIndex = 0;
+            //    }
+            //    _isReloading = true;
+            //}
+            /*else*/ if (_isReloading)
             {
                 if (_reloadTime < _reload)
                     _reloadTime += Time.deltaTime;
