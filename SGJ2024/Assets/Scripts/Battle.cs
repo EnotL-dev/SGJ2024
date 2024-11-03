@@ -13,6 +13,9 @@ namespace BattleSystem
         [Space]
         [SerializeField] private WarningMessage _warningMessage;
         [SerializeField] private float _warningWaitingTime = 1f;
+        [Space, Tooltip("saves")]
+        [SerializeField] private SaverScript _saverScript;
+        [SerializeField] private PlayerCollector _playerCollector;
         private KnightTargetSwitcher _targetSwitcher;
         private Health _knightHealth;
         private bool _poisoning = true;
@@ -42,6 +45,13 @@ namespace BattleSystem
             Debug.Log("Victory");
             _continue = false;
             _darkBackGround.gameObject.SetActive(true);
+            SaveAll();
+        }
+
+        private void SaveAll()
+        {
+            _playerCollector.SaveKills();
+            _saverScript.gameObject.SetActive(true);
         }
 
         private void Start()

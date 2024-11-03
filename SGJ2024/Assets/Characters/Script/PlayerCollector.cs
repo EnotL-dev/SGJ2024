@@ -7,6 +7,33 @@ namespace BattleSystem
     {
         [SerializeField] private InventoryManager _inventory;
         [SerializeField] private SaverScript _saver;
+        private KillsContainer _killsContainer = new KillsContainer();
+
+        public class KillsContainer
+        {
+            public int Goblins { get; set; }
+            public int Skeletons { get; set; }
+            public int Spiders { get; set; }
+            public int Wolfs { get; set; }
+            public int Grifon { get; set; }
+            public int Guardians { get; set; }
+            public int Exodus { get; set; }
+        }
+
+        public void SaveKills()
+        {
+            Debug.Log($"_saver {_saver.name}");
+            Debug.Log($"_killsContainer {_saver.addKilledMonsters}");
+            _saver.addKilledMonsters = new KilledMonsters(
+                _killsContainer.Goblins,
+                _killsContainer.Skeletons,
+                _killsContainer.Spiders,
+                _killsContainer.Wolfs,
+                _killsContainer.Grifon,
+                _killsContainer.Guardians,
+                _killsContainer.Exodus
+                );
+        }
 
         public bool AreFreePlaces()
         {
@@ -34,8 +61,6 @@ namespace BattleSystem
             //makeSound(item.gameObject.GetComponent<DropAndDrag>().id_item);
         }
 
-        //private KilledMonsters 
-
         public override void Collect(ItemContainer item)
         {
             if (item.Item.id > 1)
@@ -51,17 +76,34 @@ namespace BattleSystem
                     }
                 }
             }
-            //else if (item.Item.id <= -10)
-            //{
-            //    switch (item.Item.id)
-            //    {
-            //        case -10:
-            //            _saver.addKilledMonsters = new KilledMonsters()
-            //    }
-
-              
-            //}
-                base.Collect(item);
+            else if (item.Item.id <= -10)
+            {
+                switch (item.Item.id)
+                {
+                    case -10:
+                        _killsContainer.Exodus++;
+                        break;
+                    case -11:
+                        _killsContainer.Goblins++;
+                        break;
+                    case -12:
+                        _killsContainer.Grifon++;
+                        break;
+                    case -13:
+                        _killsContainer.Guardians++;
+                        break;
+                    case -14:
+                        _killsContainer.Skeletons++;
+                        break;
+                    case -15:
+                        _killsContainer.Spiders++;
+                        break;
+                    case -16:
+                        _killsContainer.Wolfs++;
+                        break;
+                }
+            }
+            base.Collect(item);
         }
     }
 }

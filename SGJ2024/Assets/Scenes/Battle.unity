@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -500,6 +501,8 @@ MonoBehaviour:
   _darkBackGround: {fileID: 1858274274}
   _warningMessage: {fileID: 6470221456438887886}
   _warningWaitingTime: 1
+  _saverScript: {fileID: 2118196553}
+  _playerCollector: {fileID: 1833256925}
 --- !u!4 &221355592
 Transform:
   m_ObjectHideFlags: 0
@@ -824,6 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -1047,6 +1051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -1154,6 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -1629,6 +1635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -1687,6 +1694,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
       propertyPath: _lyingItem
+      value: 
+      objectReference: {fileID: 444923494}
+    - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
+      propertyPath: _lyingItem.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
+      propertyPath: '_lyingItem.Array.data[0]'
+      value: 
+      objectReference: {fileID: 444923494}
+    - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
+      propertyPath: '_lyingItem.Array.data[1]'
       value: 
       objectReference: {fileID: 444923494}
     - target: {fileID: 588279398531367481, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
@@ -2236,6 +2255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -2440,6 +2460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -2558,6 +2579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -2745,6 +2767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -2852,6 +2875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -2910,6 +2934,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
       propertyPath: _lyingItem
+      value: 
+      objectReference: {fileID: 747954559}
+    - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
+      propertyPath: _lyingItem.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
+      propertyPath: '_lyingItem.Array.data[0]'
+      value: 
+      objectReference: {fileID: 747954559}
+    - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
+      propertyPath: '_lyingItem.Array.data[1]'
       value: 
       objectReference: {fileID: 747954559}
     - target: {fileID: 588279398531367481, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
@@ -3455,6 +3491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -3833,6 +3870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -3940,6 +3978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -4047,6 +4086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -4460,6 +4500,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6470221456438887891}
     - target: {fileID: 3786935075488327608, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
+      propertyPath: _saver
+      value: 
+      objectReference: {fileID: 2118196553}
+    - target: {fileID: 3786935075488327608, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
       propertyPath: _inventory
       value: 
       objectReference: {fileID: 1764525158}
@@ -4771,6 +4815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -5203,6 +5248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb767c9f496b94a964d78e4e9047ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
   _itemTrower: {fileID: 1975682121}
   mySlot: {fileID: 0}
   id_item: 0
@@ -5261,6 +5307,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
       propertyPath: _lyingItem
+      value: 
+      objectReference: {fileID: 640203438}
+    - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
+      propertyPath: _lyingItem.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
+      propertyPath: '_lyingItem.Array.data[0]'
+      value: 
+      objectReference: {fileID: 640203438}
+    - target: {fileID: -1726588641938503299, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
+      propertyPath: '_lyingItem.Array.data[1]'
       value: 
       objectReference: {fileID: 640203438}
     - target: {fileID: 588279398531367481, guid: ccf532470cbc0c24bab9489d347cedea, type: 3}
