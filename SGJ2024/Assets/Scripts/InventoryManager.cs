@@ -91,6 +91,7 @@ public class InventoryManager : MonoBehaviour
     private void saveItems()
     {
         int temp_lv = 0;
+        int temp_hp = 100;
         int temp_money = 0;
         KilledMonsters temp_addLilledMonsters = new KilledMonsters(0, 0, 0, 0, 0, 0, 0);
 
@@ -98,6 +99,7 @@ public class InventoryManager : MonoBehaviour
         if (loadedData != null)
         {
             temp_lv += loadedData.lv;
+            temp_hp = loadedData.hp;
             temp_money += loadedData.money;
             temp_addLilledMonsters = loadedData.killedMonsters;
         }
@@ -110,7 +112,7 @@ public class InventoryManager : MonoBehaviour
             temp_items.Add(new DoubleList(item_in_slot.id_item, item_in_slot.durability_item));
         }
 
-        PlayerData playerData = new PlayerData(temp_lv, temp_money, temp_items, temp_addLilledMonsters);
+        PlayerData playerData = new PlayerData(temp_lv, temp_hp, temp_money, temp_items, temp_addLilledMonsters);
         SaveManager.SavePlayerData(playerData);
     }
 }

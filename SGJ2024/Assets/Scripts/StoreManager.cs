@@ -18,7 +18,7 @@ public class StoreManager : MonoBehaviour
     private void moneySave()
     {
         PlayerData loadedData = SaveManager.LoadPlayerData();
-        PlayerData saveData = new PlayerData(loadedData.lv, money, loadedData.items, loadedData.killedMonsters);
+        PlayerData saveData = new PlayerData(loadedData.lv, loadedData.hp, money, loadedData.items, loadedData.killedMonsters);
         SaveManager.SavePlayerData(saveData);
     }
 
@@ -110,7 +110,7 @@ public class StoreManager : MonoBehaviour
             } else { audioSourceStore.PlayOneShot(buy_abort_sound); }
 
             PlayerData loadedData = SaveManager.LoadPlayerData();
-            PlayerData saveData = new PlayerData(loadedData.lv, money, loadedData.items, killedMonsters);
+            PlayerData saveData = new PlayerData(loadedData.lv, loadedData.hp, money, loadedData.items, killedMonsters);
             SaveManager.SavePlayerData(saveData);
         }
         else
