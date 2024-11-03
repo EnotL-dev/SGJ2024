@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/Dungeon_map.unity
+    guid: 1c38ec9e8ceb9f742b4f5b045402c601
+  - enabled: 1
+    path: Assets/Scenes/ShopTest.unity
+    guid: f386f1876b7458541b6f446c77bdbccf
+  - enabled: 0
     path: Assets/Scenes/DialogSceneTemplete.unity
     guid: 65427cf62f1c26a4a852ca7404c4feba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Battle.unity
     guid: ea6b67a34ed31da41851f609efdb0893
   m_configObjects:

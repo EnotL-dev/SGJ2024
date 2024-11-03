@@ -320,6 +320,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &53657974
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +620,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &386928498
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +726,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &418109864
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +946,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &620591655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1052,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &653532999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,6 +1255,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &686135320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,6 +1458,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &741359950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,6 +1564,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &748195316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,6 +1864,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &1000961214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,6 +1970,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &1025403807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,6 +2173,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &1112854362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,7 +2340,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2715,6 +2737,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &1644557701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,6 +2959,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &1670470845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,6 +3065,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &1674785617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3240,6 +3268,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &1738860313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,7 +3824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  add_lv: 0
+  add_lv: 2
+  hp: 100
   add_money: 0
   items:
   - id: 1
@@ -3956,6 +3987,8 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
+  raycastElementsUI: {fileID: 0}
 --- !u!1 &2047678169
 GameObject:
   m_ObjectHideFlags: 0

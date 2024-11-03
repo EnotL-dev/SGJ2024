@@ -6,6 +6,7 @@ public class SaverScript : MonoBehaviour
 {
     [Header("СОХРАНЯЕТ НЕ ПУСТЫЕ КЛАССЫ ПО АКТИВАЦИИ ОБЪЕКТА.\n Если даты нет, сохранит то что тут.")]
     public int add_lv;
+    public int hp = 100;
     public int add_money;
     [SerializeField] public List<DoubleList> items = new List<DoubleList>();
     public KilledMonsters addKilledMonsters = new KilledMonsters(0, 0, 0, 0, 0, 0, 0);
@@ -32,13 +33,13 @@ public class SaverScript : MonoBehaviour
         }
         temp_addLilledMonsters = addKills(temp_addLilledMonsters, addKilledMonsters);
 
-        PlayerData playerData = new PlayerData(temp_lv, temp_money, temp_items, temp_addLilledMonsters);
+        PlayerData playerData = new PlayerData(temp_lv, hp, temp_money, temp_items, temp_addLilledMonsters);
         SaveManager.SavePlayerData(playerData);
 
         PlayerData _loadedData = SaveManager.LoadPlayerData();
         if (loadedData != null)
         {
-            Debug.Log($"Уровень: {_loadedData.lv}, Деньги: {_loadedData.money}, Предметов: {_loadedData.items.Count}, Монстров: {_loadedData.killedMonsters.goblins}");
+            Debug.Log($"Уровень: {_loadedData.lv}, ХП сейчас: {_loadedData.hp}, Деньги: {_loadedData.money}, Предметов: {_loadedData.items.Count}, Монстров: {_loadedData.killedMonsters.goblins}");
         }
     }
 

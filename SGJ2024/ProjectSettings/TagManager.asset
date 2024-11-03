@@ -9,6 +9,7 @@ TagManager:
   - inv_slot
   - StoreManager
   - InventoryManager
+  - AudioSoundStore
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: cellDungeon
+    uniqueID: 3442566029
     locked: 0
   m_RenderingLayers:
   - Default
