@@ -30,6 +30,12 @@ namespace BattleSystem
         {
             yield return Forward((target.transform.position - _switcher.transform.position).normalized * _maxDistance + target.transform.position);
             target.TakeDamage(_stats.Damage);
+            if (_stats is KnightStats)
+            {
+                var knightStats = _stats as KnightStats;
+                if (knightStats.GetWeaponType() == KnightStats.ItemType.weapon)
+                    knightStats.UseItem();
+            }
             yield return Backward();
         }
 

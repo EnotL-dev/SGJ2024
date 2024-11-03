@@ -15,11 +15,11 @@ namespace BattleSystem
         private List<FlyingItem> _pool = new List<FlyingItem>();
         private int _poolIndex = 0;
 
-        public void Launch(int itemId)
+        public void Launch(ItemContainer item)
         {
             if (_isReloading)
                 return;
-            LaunchItem(_pool[_poolIndex], itemId);
+            LaunchItem(_pool[_poolIndex], item);
             _poolIndex++;
             if (_poolIndex > _pool.Count - 1)
             {
@@ -39,11 +39,11 @@ namespace BattleSystem
             }
         }
 
-        private void LaunchItem(FlyingItem item, int itemId)
+        private void LaunchItem(FlyingItem item, ItemContainer itemContainer)
         {
             item.transform.position = transform.position;
             item.SetTarget(_target);
-            item.SetItem(itemId);
+            item.SetItem(itemContainer);
             item.gameObject.SetActive(true);
             // bullet.transform.parent = null;
             var direction = _target.position - transform.position;

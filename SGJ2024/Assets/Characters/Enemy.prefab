@@ -235,7 +235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flyingItem: {fileID: 6653258882274972455}
-  _lyingItem: {fileID: 0}
+  _lyingItem:
+  - {fileID: 0}
   _itemId: 1
 --- !u!114 &5537778099398455542
 MonoBehaviour:
@@ -250,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: {fileID: 6954084996003321850}
-  _damage: 20
+  _damage: 1
   _armor: 0
 --- !u!1001 &1391309077356419220
 PrefabInstance:

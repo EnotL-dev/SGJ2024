@@ -6,12 +6,12 @@ namespace BattleSystem
     {
         [SerializeField] private SpriteRenderer _sprite;
         
-        private Item _item;
+        private ItemContainer _item;
 
-        public void SetItem(Item item)
+        public void SetItem(ItemContainer item)
         {
             _item = item;
-            _sprite.sprite = Resources.Load<Sprite>(_item.spriteLink);
+            _sprite.sprite = Resources.Load<Sprite>(_item.Item.spriteLink);
         }
 
         private void OnTriggerEnter2D(Collider2D collision)

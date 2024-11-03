@@ -26,6 +26,13 @@ namespace BattleSystem
         public virtual void TakeDamage(int value)
         {
             value -= _stats.Armor;
+            if (_stats is KnightStats) 
+            {
+                var knightStats = _stats as KnightStats;
+                if (knightStats.GetWeaponType() == KnightStats.ItemType.shield)
+                    knightStats.UseItem();
+            }
+            
             if (value < 0)
                 value = 0;
             _currentValue -= value;
