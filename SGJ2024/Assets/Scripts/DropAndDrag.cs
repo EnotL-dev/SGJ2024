@@ -7,7 +7,7 @@ using BattleSystem;
 
 public class DropAndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    private CanvasGroup canvasGroup;
+    [HideInInspector] public CanvasGroup canvasGroup;
     private RectTransform rectTransform;
     private ItemTrower _itemTrower;
     [HideInInspector] public Transform mySlot;
