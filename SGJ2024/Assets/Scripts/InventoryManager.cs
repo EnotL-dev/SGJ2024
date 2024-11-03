@@ -36,9 +36,22 @@ public class InventoryManager : MonoBehaviour
     public void addItem(DoubleList doubleList, Image slot)
     {
         int slot_num = return_slot_num(slot);
-        if(slots[slot_num].sprite != null || slot_num < 0) //Вторая проверка (допустим?)
+        if(slots[slot_num].sprite != null && slot_num >= 0) //Вторая проверка (допустим?)
         {
             items[slot_num] = doubleList;
+        }
+        else
+        {
+            Debug.Log("НЕВОЗМОЖНО!");
+        }
+    }
+
+    public void removeItem(Image slot)
+    {
+        int slot_num = return_slot_num(slot);
+        if (slots[slot_num].sprite != null && slot_num >= 0) //Вторая проверка (допустим?)
+        {
+            items[slot_num] = new DoubleList(0,0);
         }
         else
         {

@@ -121,7 +121,7 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
 
     private void spawnPanel()
     {
-        if (transform.GetChild(0).gameObject.activeSelf)
+        if (transform.GetChild(0).gameObject.activeSelf && transform.GetChild(0).gameObject.GetComponent<DropAndDrag>().id_item > 0)
         {
             _panel = Instantiate(panel, parent_for_information);
 
