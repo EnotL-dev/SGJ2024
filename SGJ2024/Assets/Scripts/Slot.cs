@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    private StoreManager storeManager;
+    private InventoryManager inventoryManager;
     [SerializeField] private Sprite activeSlot;
     [SerializeField] private Sprite disableSlot;
     [Space(10)]
@@ -21,6 +23,8 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
     private AudioSource audioSource;
     private void Awake()
     {
+        storeManager = GameObject.FindWithTag("StoreManager").GetComponent<StoreManager>();
+        inventoryManager = GameObject.FindWithTag("InventoryManager").GetComponent<InventoryManager>();
         audioSource = GameObject.FindWithTag("AudioSoundInventory").GetComponent<AudioSource>();
     }
 
@@ -44,27 +48,71 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
     {
         if (eventData.pointerDrag != null)
         {
-            var item = eventData.pointerDrag.transform;
+            Transform item = eventData.pointerDrag.transform;
 
             if ((item.gameObject.tag == "store_slot" && gameObject.tag == "inv_slot") || (item.gameObject.tag == "inv_slot" && gameObject.tag == "inv_slot"))
             {
                 Transform child = transform.GetChild(0);
-
-                child.gameObject.GetComponent<DropAndDrag>().mySlot = item.gameObject.GetComponent<DropAndDrag>().mySlot;
-                child.SetParent(item.gameObject.GetComponent<DropAndDrag>().mySlot);
-                child.localPosition = Vector3.zero;
-
-                item.SetParent(transform);
-                item.localPosition = Vector3.zero;
-                item.gameObject.GetComponent<DropAndDrag>().mySlot = transform;
-
-                makeSound(item.gameObject.GetComponent<DropAndDrag>().id_item);
-
-                if (_panel != null)
+                if(item.gameObject.tag == "inv_slot" && gameObject.tag == "inv_slot")
                 {
-                    Destroy(_panel);
+                    change_inventory_slot(item, child);
+                }
+                else if (item.gameObject.tag == "store_slot" && gameObject.tag == "inv_slot")
+                {
+                    if(!child.gameObject.activeSelf) // То есть слот пуст
+                    {
+                        buy_item(item, child);
+                    }
                 }
             }
+        }
+    }
+
+    private void change_inventory_slot(Transform item, Transform child)
+    {
+        child.gameObject.GetComponent<DropAndDrag>().mySlot = item.gameObject.GetComponent<DropAndDrag>().mySlot;
+        child.SetParent(item.gameObject.GetComponent<DropAndDrag>().mySlot);
+        child.localPosition = Vector3.zero;
+
+        item.SetParent(transform);
+        item.localPosition = Vector3.zero;
+        item.gameObject.GetComponent<DropAndDrag>().mySlot = transform;
+
+        makeSound(item.gameObject.GetComponent<DropAndDrag>().id_item);
+
+        if (_panel != null)
+        {
+            Destroy(_panel);
+        }
+    }
+
+    private void buy_item(Transform item, Transform child) //Не забываем что мы работаем в слоте ИНВЕНТАРЯ а не магазина
+    {
+        ItemList itemList = ItemList.GetInstance();
+        int id_item = item.gameObject.GetComponent<DropAndDrag>().id_item;
+        int durability_item = itemList.returnItemById(id_item).durability;
+        int cost = itemList.returnItemById(id_item).cost;
+        string spriteLink = itemList.returnItemById(id_item).spriteLink;
+
+        if (storeManager.returnMoney() >= cost)
+        {
+            storeManager.buying(cost);
+
+            DoubleList doubleList = new DoubleList(id_item, durability_item);
+            inventoryManager.addItem(doubleList, gameObject.GetComponent<Image>());
+            child.gameObject.GetComponent<DropAndDrag>().id_item = id_item;
+            child.gameObject.GetComponent<DropAndDrag>().durability_item = durability_item;
+            child.gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>(spriteLink);
+            child.gameObject.SetActive(true);
+
+            makeSound(item.gameObject.GetComponent<DropAndDrag>().id_item);
+
+            if (_panel != null)
+            {
+                Destroy(_panel);
+            }
+
+            Debug.Log($"Куплен предмет {itemList.returnItemById(id_item).name}");
         }
     }
 

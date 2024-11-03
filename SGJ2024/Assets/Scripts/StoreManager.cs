@@ -9,6 +9,16 @@ public class StoreManager : MonoBehaviour
     [Space(20)]
     [SerializeField] private KilledMonsters killedMonsters;
 
+    public int returnMoney()
+    {
+        return money;
+    }
+
+    public void buying(int cost)
+    {
+        money -= cost;
+    }
+
     private void OnEnable()
     {
         ItemList itemList = ItemList.GetInstance();

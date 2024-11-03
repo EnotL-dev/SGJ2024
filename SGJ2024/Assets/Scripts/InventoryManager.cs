@@ -20,6 +20,32 @@ public class InventoryManager : MonoBehaviour
         saveItems();
     }
 
+    private int return_slot_num(Image slot_num)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if(slots[i] == slot_num)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    public void addItem(DoubleList doubleList, Image slot)
+    {
+        int slot_num = return_slot_num(slot);
+        if(slots[slot_num].sprite != null || slot_num < 0) //Âòîðàÿ ïðîâåðêà (äîïóñòèì?)
+        {
+            items[slot_num] = doubleList;
+        }
+        else
+        {
+            Debug.Log("ÍÅÂÎÇÌÎÆÍÎ!");
+        }
+    }
+
     private void loadItems()
     {
         foreach (Image slot in slots)
