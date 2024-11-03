@@ -185,6 +185,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &12861969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,6 +825,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &348496691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,7 +956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1044,6 +1046,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &402323133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,6 +1151,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &434303572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1620,6 +1624,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &573018473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2220,6 +2225,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &972057143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2421,6 +2427,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1031912595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2536,6 +2543,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1066861374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2630,7 +2638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2720,6 +2728,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1108018245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2824,6 +2833,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1160947783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3420,6 +3430,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1423569514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3458,6 +3469,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423569510}
   m_CullTransparentMesh: 1
+--- !u!1 &1425465092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1425465093}
+  - component: {fileID: 1425465094}
+  m_Layer: 5
+  m_Name: InventoryRaycast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1425465093
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425465092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1764525162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1425465094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425465092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f83ddafa152a74b839398fea46c812, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycaster: {fileID: 1764525159}
+  eventSystem: {fileID: 1443570859}
 --- !u!1 &1439483857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,6 +3806,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1494464715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3849,6 +3911,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1591787685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3953,6 +4016,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1677059584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4198,6 +4262,7 @@ GameObject:
   - component: {fileID: 1764525160}
   - component: {fileID: 1764525159}
   - component: {fileID: 1764525158}
+  - component: {fileID: 1764525163}
   m_Layer: 5
   m_Name: InventoryManager
   m_TagString: InventoryManager
@@ -4310,6 +4375,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1425465093}
   - {fileID: 1099110310}
   - {fileID: 396549347}
   - {fileID: 1860811117}
@@ -4320,6 +4386,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1764525163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764525157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &1800162840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4635,6 +4718,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1938388584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5052,6 +5136,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
+  raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &2124329038
 MonoBehaviour:
   m_ObjectHideFlags: 0
