@@ -23,7 +23,10 @@ public class Slot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
     private AudioSource audioSource;
     private void Awake()
     {
-        storeManager = GameObject.FindWithTag("StoreManager").GetComponent<StoreManager>();
+        try
+        {
+            storeManager = GameObject.FindWithTag("StoreManager").GetComponent<StoreManager>();
+        } catch { }
         inventoryManager = GameObject.FindWithTag("InventoryManager").GetComponent<InventoryManager>();
         audioSource = GameObject.FindWithTag("AudioSoundInventory").GetComponent<AudioSource>();
     }
