@@ -20,6 +20,11 @@ public class InventoryManager : MonoBehaviour
         saveItems();
     }
 
+    public Image[] returnSlots()
+    {
+        return slots;
+    }
+
     private int return_slot_num(Image slot_num)
     {
         for (int i = 0; i < slots.Length; i++)
