@@ -151,5 +151,13 @@ namespace BattleSystem
             yield return new WaitWhile(() => actor.GetCurrentState() is Idle);
             yield return new WaitForSeconds(_enemyWaiting);
         }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                Victory();
+            }
+        }
     }
 }
