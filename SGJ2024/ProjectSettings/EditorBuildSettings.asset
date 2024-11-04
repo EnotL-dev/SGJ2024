@@ -27,26 +27,47 @@ EditorBuildSettings:
     path: Assets/Scenes/Dungeon_map.unity
     guid: 1c38ec9e8ceb9f742b4f5b045402c601
   - enabled: 1
+    path: Assets/Scenes/Battle1.unity
+    guid: b10af7cd82d250a49b5894a3cf37be99
+  - enabled: 1
     path: Assets/Scenes/Dialog1.unity
     guid: a79f4a892808c5a41b0ace26a81c21ae
+  - enabled: 1
+    path: Assets/Scenes/Battle2.unity
+    guid: 51a888c7284fbd84a89c9d9022d56757
   - enabled: 1
     path: Assets/Scenes/Dialog2.unity
     guid: a17dfa545bd340a479b081231c4253b0
   - enabled: 1
+    path: Assets/Scenes/Battle3.unity
+    guid: f905bfee89dba4144b0ff1374b18bb2c
+  - enabled: 1
     path: Assets/Scenes/Dialog3.unity
     guid: 26058b5a2eead0141bbb39c688c4bdac
+  - enabled: 1
+    path: Assets/Scenes/Battle4.unity
+    guid: 822cce13c4fc3014e9dc248e6688a329
   - enabled: 1
     path: Assets/Scenes/Dialog4.unity
     guid: c19d837a08c11c84ea2e671be8681bfc
   - enabled: 1
+    path: Assets/Scenes/Battle5.unity
+    guid: 60ae857caf3808645b0c8d27339d4f05
+  - enabled: 1
     path: Assets/Scenes/Dialog5.unity
     guid: edd35a7345f5e324180340d3e65a8f22
+  - enabled: 1
+    path: Assets/Scenes/Battle6.unity
+    guid: 5e82476c577055542a6f91ce2bed8bde
   - enabled: 1
     path: Assets/Scenes/Dialog6.unity
     guid: e8126b96dbfacce4ea4f26b3c633dcee
   - enabled: 1
-    path: Assets/Scenes/CreditsScene.unity
-    guid: 4efac3a3ecba5ed46b5a0048b4168985
+    path: Assets/Scenes/Battle7.unity
+    guid: 0e7dcff1ee7c55b4e9ada30ef67114f0
+  - enabled: 1
+    path: Assets/Scenes/Dialog7.unity
+    guid: beb6a5158615c9b4292f8728ed7e68b4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

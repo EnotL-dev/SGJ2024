@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -559,6 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -763,6 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -1197,6 +1200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -1401,6 +1405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -1605,6 +1610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -1906,6 +1912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -2110,6 +2117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -2217,6 +2225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -2324,6 +2333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -2603,6 +2613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3076,6 +3087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3280,6 +3292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3387,6 +3400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3591,6 +3605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3795,6 +3810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -3902,6 +3918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -4598,6 +4615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -4705,6 +4723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -4812,6 +4831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -5210,6 +5230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -5593,6 +5614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -5700,6 +5722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -6001,6 +6024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -6496,6 +6520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -6603,6 +6628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -6665,7 +6691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1554977049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6852,6 +6878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -7056,6 +7083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -7260,6 +7288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -7561,6 +7590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -7840,6 +7870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8026,6 +8057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8230,6 +8262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8337,6 +8370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8444,6 +8478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -8863,6 +8898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -9310,6 +9346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -9417,6 +9454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -9524,6 +9562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
@@ -9583,7 +9622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2011823601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9597,7 +9636,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   add_lv: 0
+  dontChangeHp: 0
   hp: 100
+  halfHp: 0
   add_money: 0
   items:
   - id: 1
@@ -9632,6 +9673,7 @@ MonoBehaviour:
     durability: 0
   - id: 23
     durability: 0
+  removeKills: 0
   addKilledMonsters:
     goblins: 0
     skeletons: 0
@@ -9640,6 +9682,7 @@ MonoBehaviour:
     grifon: 0
     guardians: 0
     exodus: 0
+  dragon_was_damaged: 0
 --- !u!4 &2011823602
 Transform:
   m_ObjectHideFlags: 0
@@ -9719,6 +9762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
+  _itemTrower: {fileID: 0}
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
