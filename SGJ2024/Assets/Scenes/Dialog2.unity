@@ -1235,7 +1235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   add_lv: 1
   dontChangeHp: 1
-  hp: 200
+  hp: 150
   halfHp: 0
   add_money: 0
   items: []
