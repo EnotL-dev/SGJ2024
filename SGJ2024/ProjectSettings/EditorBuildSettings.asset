@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/BattleLearn.unity
     guid: dcbfe6141d2cbf141bd5c78e24815de0
   - enabled: 1
+    path: Assets/Scenes/Dialog0_1.unity
+    guid: 172a6a38b0c99ba4b884d7bf620b159d
+  - enabled: 1
+    path: Assets/Scenes/GuildVisit.unity
+    guid: 93b250ae014f2f74d9101ab43c9d961f
+  - enabled: 1
     path: Assets/Scenes/Guild.unity
     guid: b5ee5a94275b4b14e95779cfbc4366de
   - enabled: 1

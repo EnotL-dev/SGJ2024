@@ -39,14 +39,248 @@ public class MessagesClass //ЭТО СИНГЛТОН
                 return dialog0_choose1;
             case "dialog0_choose2":
                 return dialog0_choose2;
+            case "dialog0_1":
+                return dialog0_1;
+            case "dialog1":
+                return dialog1;
+            case "dialog1_choose1":
+                return dialog1_choose1;
+            case "dialog1_choose2":
+                return dialog1_choose2;
+            case "dialog1_choose3":
+                return dialog1_choose3;
+            case "dialog2":
+                return dialog2;
+            case "dialog2_notcheck":
+                return dialog2_notcheck;
+            case "dialog2_mimic":
+                return dialog2_mimic;
+            case "dialog2_gold":
+                return dialog2_gold;
             default:
                 Debug.Log("<Color=red>ТАКОГО КОНСТРУКТА НЕТ!</color>");
                 return null;
         }
     }
 
+    private MessageConstructor[] dialog2_gold =
+    {
+        new MessageConstructor(
+            "",
+            "Рыцарь аккуратно открывает пыльный сундук",
+            "change_gold"
+            ),
+        new MessageConstructor(
+            "",
+            "Внутри лежит 90 монет горсткой",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Пополнив кошель, вы возвращаетесь в гильдию с чувством облегчения",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Пополнив кошель вы возвращаетесь в гильдию с чувством облегчения",
+            "dialog2_gold"
+            ),
+    };
+
+    private MessageConstructor[] dialog2_mimic =
+    {
+        new MessageConstructor(
+            "",
+            "Сундук оказывается мимиком!",
+            "change_mimic"
+            ),
+        new MessageConstructor(
+            "",
+            "Зубастая пасть из крови и плоти раскрывается, заглатывая большого рыцаря по пояс",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы пронзаете тело мимика лезвием своего кинжала, спасая Сира Рыцаря от неминуемой смерти",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой.*",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой.*",
+            "dialog2_mimic"
+            ),
+    };
+
+    private MessageConstructor[] dialog2_notcheck =
+    {
+        new MessageConstructor(
+            "",
+            "Рыцарь присматривается к сундуку и решает не рисковать",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы покидаете подземелье с томным чувством сомнения",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы покидаете подземелье с томным чувством сомнения",
+            "dialog2_notcheck"
+            ),
+    };
+
+    private MessageConstructor[] dialog2 =
+    {
+        new MessageConstructor(
+            "",
+            "На обратном пути вам встречается старый сундук с незатейливой замочной скважиной",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь опустился на одно колено, чтобы проверить содержимое",
+            "dialog2"
+            ),
+    };
+
+    private MessageConstructor[] dialog1_choose3 =
+    {
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь и вы замераете",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Стены неспешно движутся навстречу друг к другу. Безопасного места нет.",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "В ваши тела вонзаются лезвия клинков и копий, проходя насквозь",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Не в силах слезть с лезвий, вы погибаете расплющенными стенами",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Не в силах слезть с лезвий, вы погибаете расплющенными стенами",
+            "dialog1_choose3"
+            ),
+    };
+
+    private MessageConstructor[] dialog1_choose2 =
+    {
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь беспокойно оглядывается на вас",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Долго не думая, ваш напарник вскидывает вас и вашу ношу под руки",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "С резким рывком, пробиваясь через острые копья и мечи, вы бежите к концу коридора",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Плоть тела рыцаря рвется в местах не защищенных доспехом",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Но ему удается спасти вас, себя и вашу ношу до того как стены сомкнуться",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой*",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой*",
+            "dialog1_choose2"
+            ),
+    };
+
+    private MessageConstructor[] dialog1_choose1 =
+    {
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь замахивается тяжелыми руками, сокрушая длинные копья и хрупкие клинки",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Этого оказывается достаточно, чтобы дать вам места для маневра и сбежать до того как стены сомкнуться",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Этого оказывается достаточно, чтобы дать вам места для маневра и сбежать до того как стены сомкнуться",
+            "dialog1_choose1"
+            ),
+    };
+
+    private MessageConstructor[] dialog1 =
+    {
+        new MessageConstructor(
+            "",
+            "По дороге на выход Сир Рыцарь наступает на каменную плиту",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Из стен пробиваются острые как бритва мечи и копья",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Длинный коридор сужается, готовый превратить вас в расплющенное решето",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Нужно решать быстро...",
+            "dialog1"
+            ),
+    };
+
+    private MessageConstructor[] dialog0_1 =
+    {
+        new MessageConstructor(
+            "",
+            "Вы собираете головы монстров с поле боя Сира Рыцаря и отправляетесь в город",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Минуя стражу из безликих гвардейцев, вы оказываетесь на пороге гильдии, откуда доносится музыка и запах хмеля",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Минуя стражу из безликих гвардейцев, вы оказываетесь на пороге гильдии, откуда доносится музыка и запах хмеля",
+            "dialog0_1_end"
+            ),
+    };
+
     private MessageConstructor[] dialog0_choose2 =
-{
+    {
         new MessageConstructor(
             "",
             "Вы уверяете напарника, что не стоит воровать у мертвых. Он прислушивается к вам",
