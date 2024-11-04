@@ -10,6 +10,7 @@ namespace BattleSystem
         {
             _bullet.transform.position = transform.position;
             _bullet.Launch(_stats.Damage, _switcher.Target);
+            _animator.SetTrigger("Attack");
         }
     }
 }

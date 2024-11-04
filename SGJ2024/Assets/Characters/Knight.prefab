@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 4180337017099146350}
   - component: {fileID: 2723931004636572821}
   - component: {fileID: 8443167564661728610}
+  - component: {fileID: 2408764320387393645}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -224,36 +225,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
-  _allTargets: []
-  _animMove:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _moveTime: 0.25
-  _maxDistance: -0.5
-  _stats: {fileID: 5766062835771264927}
   _attackType: {fileID: 916181535079480964}
   _sprite: {fileID: 9024855202187067892}
+  _animator: {fileID: 2408764320387393645}
 --- !u!114 &916181535079480964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _switcher: {fileID: 3357584058082386043}
   _stats: {fileID: 5766062835771264927}
+  _animator: {fileID: 2408764320387393645}
   _animMove:
     serializedVersion: 2
     m_Curve:
@@ -294,6 +269,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   _moveTime: 0.25
   _maxDistance: -0.5
+  _battle: {fileID: 0}
 --- !u!114 &8850991272067388278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,6 +433,28 @@ MonoBehaviour:
   _target: {fileID: 0}
   _collector: {fileID: 0}
   _reload: 0
+--- !u!95 &2408764320387393645
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569614786188478277}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 407bf0d89ed78e244be3f59ad6942e27, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7610737486861948009
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +619,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -8985680732576350864, guid: 978366ae44e56a94b9ca22154112fd57, type: 3}
-  m_Color: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

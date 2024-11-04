@@ -11,5 +11,10 @@ namespace BattleSystem
             base.Dead();
             _battle.Defeat();
         }
+
+        public void Poison(int damage)
+        {
+            _battle.Poison(damage);
+        }
     }
 }

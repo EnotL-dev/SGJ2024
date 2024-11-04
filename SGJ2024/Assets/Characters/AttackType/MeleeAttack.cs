@@ -19,6 +19,7 @@ namespace BattleSystem
 
         private IEnumerator DoAttack(Health target)
         {
+            _animator.SetTrigger("Attack");
             yield return Forward((target.transform.position - _switcher.transform.position).normalized * _maxDistance + target.transform.position);
             target.TakeDamage(_stats.Damage);
             yield return Backward();

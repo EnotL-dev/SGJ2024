@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -6,11 +5,18 @@ namespace BattleSystem
 {
     public class StateBehaviour : MonoBehaviour
     {
-        public Health Target { get => _target; set { _target = value; } }
+        public Health Target { get 
+            {
+                if (_target == null)
+                    Debug.LogError("StateBehaviour: Target is null");
+                return _target;
+                        }
+            set { _target = value; } }
         [SerializeField] private Health _target;
         [Space, Tooltip("Attack")]
         [SerializeField] private AttackType _attackType;
         [SerializeField] private SpriteRenderer _sprite;
+        [SerializeField] private Animator _animator;
         protected State[] _states;
         protected State _currentState;
 
@@ -50,8 +56,8 @@ namespace BattleSystem
             _states = new State[3]
             {
                 new Attack(this, _attackType),
-                new Idle(this),
-                new Dead(this, _sprite),
+                new Idle(this, _animator),
+                new Dead(this, _sprite, _animator),
             };
             SwitchState<Idle>();
         }
