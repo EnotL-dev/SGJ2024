@@ -6,6 +6,7 @@ namespace BattleSystem
     {
         [SerializeField] protected StateBehaviour _switcher;
         [SerializeField] protected Stats _stats;
+        [SerializeField] protected Animator _animator;
 
         public abstract void DoAttack();
     }

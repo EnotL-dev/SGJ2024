@@ -11,6 +11,7 @@ namespace BattleSystem
         [SerializeField] private HpBar _hpBar;
         [SerializeField] private DamageView _damageView;
         [SerializeField] private Stats _stats;
+        [SerializeField] protected Animator _animator;
         [SerializeField] private UnityEvent _onHealthOver;
         protected int _currentValue;
 
@@ -57,7 +58,10 @@ namespace BattleSystem
             {
                 var knightStats = _stats as KnightStats;
                 if (knightStats.GetItemType() == KnightStats.ItemType.shield)
+                {
                     knightStats.UseItem();
+                    _animator.SetTrigger("Shield");
+                }
             }
             _currentValue -= value;
             _hpBar.UpdateValue(_currentValue, _count);

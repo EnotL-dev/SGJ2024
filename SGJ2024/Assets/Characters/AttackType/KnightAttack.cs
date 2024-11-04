@@ -41,11 +41,13 @@ namespace BattleSystem
             {
                 target.TakeDamage(_stats.Damage);
             }
+            _animator.SetTrigger("Attack");
             knightStats.UseItem();
         }
 
         private IEnumerator DoAttack(Health target, KnightStats knightStats, bool weapon)
         {
+            _animator.SetTrigger("Attack");
             yield return Forward((target.transform.position - _switcher.transform.position).normalized * _maxDistance + target.transform.position);
             target.TakeDamage(_stats.Damage);
             if (weapon)

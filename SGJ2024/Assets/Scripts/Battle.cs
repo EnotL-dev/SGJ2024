@@ -19,7 +19,7 @@ namespace BattleSystem
         [SerializeField] private PlayerCollector _playerCollector;
         private KnightTargetSwitcher _targetSwitcher;
         private Health _knightHealth;
-        private bool _poisoning = true;
+        private bool _poisoning = false;
         private int _poisoningDamage = 1;
         private bool _continue = true;
 

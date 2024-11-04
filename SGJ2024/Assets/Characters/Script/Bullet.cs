@@ -1,3 +1,4 @@
+using TMPro.EditorUtilities;
 using UnityEngine;
 
 namespace BattleSystem
@@ -9,7 +10,7 @@ namespace BattleSystem
         private Vector3 _startPosition;
         private float _time = 0;
         private int _damage;
-        private Health _target;
+        protected Health _target;
 
         public void Launch(int damage, Health target)
         {
@@ -37,10 +38,15 @@ namespace BattleSystem
             }
             else
             {
-                _time = 0;
-                _target.TakeDamage(_damage);
-                gameObject.SetActive(false);
+                Hit();
             }
+        }
+
+        protected virtual void Hit()
+        {
+            _time = 0;
+            _target.TakeDamage(_damage);
+            gameObject.SetActive(false);
         }
     }
 }

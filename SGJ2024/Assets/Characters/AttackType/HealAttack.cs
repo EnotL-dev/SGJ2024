@@ -11,6 +11,7 @@ namespace BattleSystem
         public override void DoAttack()
         {
             var enemies = _battle.GetEnemiesHealths();
+            _animator.SetTrigger("Heal");
             foreach (Health health in enemies)
             {
                 if (health.GetValue() > 0)
