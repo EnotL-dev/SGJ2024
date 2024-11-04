@@ -587,6 +587,7 @@ MonoBehaviour:
   - {fileID: 8477571909444823887, guid: 41d756e920de1c044adeb340e0b296ec, type: 3}
   - {fileID: 6078144697040779983, guid: b2f887bc66c76a048931e121fc0da54b, type: 3}
   - {fileID: 6078144697040779983, guid: 3be15d44bd06f25408c3872c9b76d74d, type: 3}
+  - {fileID: 6078144697040779983, guid: 640a5e78703f09e4fb90d194602bc244, type: 3}
   _timeToAttack: 10
   _timeToEnd: 10
   _OnVictory:
@@ -603,6 +604,21 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+  _OnDefeat:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1939945355}
+        m_TargetAssemblyTypeName: BattleSystem.AfterBattleLoad, Assembly-CSharp
+        m_MethodName: set_IsDeath
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!4 &221355592
 Transform:

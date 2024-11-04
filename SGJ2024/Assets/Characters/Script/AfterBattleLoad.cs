@@ -33,7 +33,7 @@ namespace BattleSystem {
             {
                 if (IsDeath) 
                 {
-                    _sceneLoader.scene_name = _guildSceneName;
+                    _sceneLoader.scene_name = _deathSceneName;
                 }
                 else
                 {
