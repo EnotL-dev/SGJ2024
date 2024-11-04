@@ -54,17 +54,7 @@ namespace BattleSystem
 
         private void Update()
         {
-            //if (!_isReloading)
-            //{
-            //    LaunchItem(_pool[_poolIndex]);
-            //    _poolIndex++;
-            //    if (_poolIndex > _pool.Count - 1)
-            //    {
-            //        _poolIndex = 0;
-            //    }
-            //    _isReloading = true;
-            //}
-            /*else*/ if (_isReloading)
+            if (_isReloading)
             {
                 if (_reloadTime < _reload)
                     _reloadTime += Time.deltaTime;

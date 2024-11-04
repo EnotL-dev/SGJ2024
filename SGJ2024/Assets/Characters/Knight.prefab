@@ -178,6 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2126779843528233049}
   - component: {fileID: 3357584058082386043}
+  - component: {fileID: 916181535079480964}
   - component: {fileID: 8850991272067388278}
   - component: {fileID: 5766062835771264927}
   - component: {fileID: 8622981279301511662}
@@ -223,6 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
+  _allTargets: []
   _animMove:
     serializedVersion: 2
     m_Curve:
@@ -250,7 +252,48 @@ MonoBehaviour:
   _moveTime: 0.25
   _maxDistance: -0.5
   _stats: {fileID: 5766062835771264927}
+  _attackType: {fileID: 916181535079480964}
   _sprite: {fileID: 9024855202187067892}
+--- !u!114 &916181535079480964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569614786188478277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b387dae77e4b944191f9f221281a094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _switcher: {fileID: 3357584058082386043}
+  _stats: {fileID: 5766062835771264927}
+  _animMove:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _moveTime: 0.25
+  _maxDistance: -0.5
 --- !u!114 &8850991272067388278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +322,7 @@ MonoBehaviour:
   _damage: 1
   _armor: 0
   _itemTrower: {fileID: 8443167564661728610}
-  _playerCollector: {fileID: 0}
+  _battle: {fileID: 0}
 --- !u!114 &8622981279301511662
 MonoBehaviour:
   m_ObjectHideFlags: 0

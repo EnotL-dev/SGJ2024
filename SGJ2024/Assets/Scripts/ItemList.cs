@@ -271,6 +271,77 @@ public class ItemList
             0,
             0,
             "Items/poison_antidote"
-            )
+            ),
+            // ГОЛОВЫ
+            new Item(
+            -10,
+            "Голова",
+            0,
+            1,
+            0,
+            0,
+            0,
+            "Items/head_evil"
+            ),
+            new Item(
+            -11,
+            "Голова",
+            0,
+            1,
+            0,
+            0,
+            0,
+            "Items/head_goblin"
+            ),
+            new Item(
+            -12,
+            "Голова",
+            0,
+            1,
+            0,
+            0,
+            0,
+            "Items/head_grifon"
+            ),
+            new Item(
+            -13,
+            "Голова",
+            0,
+            1,
+            0,
+            0,
+            0,
+            "Items/head_rockman"
+            ),
+            new Item(
+            -14,
+            "Голова",
+            0,
+            1,
+            0,
+            0,
+            0,
+            "Items/head_skelet"
+            ),
+            new Item(
+            -15,
+            "Голова",
+            0,
+            1,
+            0,
+            0,
+            0,
+            "Items/head_spider"
+            ),
+            new Item(
+            -16,
+            "Голова",
+            0,
+            1,
+            0,
+            0,
+            0,
+            "Items/head_werewolf"
+            ),
     };
 }

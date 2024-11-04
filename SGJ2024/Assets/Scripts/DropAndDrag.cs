@@ -9,7 +9,7 @@ public class DropAndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
 {
     [HideInInspector] public CanvasGroup canvasGroup;
     private RectTransform rectTransform;
-    private ItemTrower _itemTrower;
+    [SerializeField] private ItemTrower _itemTrower;
     [HideInInspector] public Transform mySlot;
     public int id_item = 0;
     public int durability_item = 0;
@@ -22,7 +22,7 @@ public class DropAndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
 
     private void Start()
     {
-        _itemTrower = FindAnyObjectByType<ItemTrower>();
+      //  _itemTrower = FindAnyObjectByType<ItemTrower>();
         audioSourceInventory = GameObject.FindWithTag("AudioSoundInventory").GetComponent<AudioSource>();
     }
 

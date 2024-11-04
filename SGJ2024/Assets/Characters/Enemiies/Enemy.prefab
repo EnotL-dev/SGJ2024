@@ -97,6 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8910071347129309919}
   - component: {fileID: 6078144697040779983}
+  - component: {fileID: 6752096112411368313}
   - component: {fileID: 6954084996003321850}
   - component: {fileID: -1726588641938503299}
   - component: {fileID: 5537778099398455542}
@@ -139,6 +140,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
+  _attackType: {fileID: 6752096112411368313}
+  _sprite: {fileID: 7502905124736675249}
+--- !u!114 &6752096112411368313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395796051201320339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a881579822e6c4149bd5e649547eb6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _switcher: {fileID: 6078144697040779983}
+  _stats: {fileID: 5537778099398455542}
   _animMove:
     serializedVersion: 2
     m_Curve:
@@ -165,8 +182,6 @@ MonoBehaviour:
     m_RotationOrder: 4
   _moveTime: 0.25
   _maxDistance: -0.5
-  _stats: {fileID: 5537778099398455542}
-  _sprite: {fileID: 7502905124736675249}
 --- !u!114 &6954084996003321850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a0ac7b835fab24b86f9d6adc098215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 100
+  _count: 20
   _hpBar: {fileID: 5026999370023259990}
   _damageView: {fileID: 997014201866113501}
   _stats: {fileID: 5537778099398455542}
@@ -235,8 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flyingItem: {fileID: 6653258882274972455}
-  _lyingItem:
-  - {fileID: 0}
+  _lyingItem: []
   _itemId: 1
 --- !u!114 &5537778099398455542
 MonoBehaviour:
@@ -251,7 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: {fileID: 6954084996003321850}
-  _damage: 1
+  _damage: 10
   _armor: 0
 --- !u!1001 &1391309077356419220
 PrefabInstance:
