@@ -57,11 +57,219 @@ public class MessagesClass //ЭТО СИНГЛТОН
                 return dialog2_mimic;
             case "dialog2_gold":
                 return dialog2_gold;
+            case "dialog3":
+                return dialog3;
+            case "dialog3_choose1":
+                return dialog3_choose1;
+            case "dialog3_choose2":
+                return dialog3_choose2;
+            case "dialog3_choose3":
+                return dialog3_choose3;
+            case "dialog4":
+                return dialog4;
+            case "dialog4_choose1":
+                return dialog4_choose1;
+            case "dialog4_choose2":
+                return dialog4_choose2;
+            case "dialog4_choose3":
+                return dialog4_choose3;
             default:
                 Debug.Log("<Color=red>ТАКОГО КОНСТРУКТА НЕТ!</color>");
                 return null;
         }
     }
+
+    private MessageConstructor[] dialog4_choose3 =
+    {
+        new MessageConstructor(
+            "",
+            "Вы решаете не тратить время в подземелье",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь хвалит вас за рассудительность",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь хвалит вас за рассудительность",
+            "dialog4_choose3"
+            ),
+    };
+
+    private MessageConstructor[] dialog4_choose2 =
+    {
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь велит вам самим разгадывать загадку",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "На стене рядом вы находите несколько нажимных плит. Здесь должна быть какая-то последовательность",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Пока вы ее подбирали, из стен полилось раскаленное масло, окутав вас с Сиром Рыцарем пламенем",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой*",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой*",
+            "dialog4_choose2"
+            ),
+    };
+
+    private MessageConstructor[] dialog4_choose1 =
+    {
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь кивает головой в знак одобрения. На его лице гордая ухмылка",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Разбежавшись, рыцарь что есть мочи врезается в стену пробивая ее насквоз",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Механизм активирующий ловушку сломан, а за стеной оказывается амулет за который можно неплохо выручить монет",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Довольные своей смекалкой вы возвращаетесь в гильдию",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Довольные своей смекалкой вы возвращаетесь в гильдию",
+            "dialog4_choose1"
+            ),
+    };
+
+    private MessageConstructor[] dialog4 =
+    {
+        new MessageConstructor(
+            "",
+            "В своем приключении вы натыкаетесь на подозрительную стену. Она точно полая!",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Но как за нее попасть?",
+            "dialog4"
+            ),
+    };
+
+    private MessageConstructor[] dialog3_choose3 =
+    {
+        new MessageConstructor(
+            "",
+            "Вы падаете на колени и начинаете молится. Сир Рыцарь повторяет за вами",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Тени прекращают танцевать и устремляют свое внимание на вас",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Они терпеливо слушают вашу молитву. Похоже, это их успокаивает",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Успокоившиеся тени уходят во тьму, оставив на месте своих танцев немного золотых монет",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Успокоившиеся тени уходят во тьму, оставив на месте своих танцев немного золотых монет",
+            "dialog3_choose3"
+            ),
+    };
+
+    private MessageConstructor[] dialog3_choose2 =
+    {
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь ловко размахивает мечом пронзая гибкие тени",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Но это не приносит результатов, более того, тени кажутся озлобленными",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Тени пролетают сквозь вас, потушив фонари вдоль коридора",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы обнаруживаете, что тени пропали, а вместе с ними что-то из вашего кармана",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы обнаруживаете, что тени пропали, а вместе с ними что-то из вашего кармана",
+            "dialog3_choose2"
+            ),
+    };
+
+    private MessageConstructor[] dialog3_choose1 =
+    {
+        new MessageConstructor(
+            "",
+            "Вы и Сир Рыцарь несетесь со всех ног назад",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Тени вас не преследуют",
+            ""
+            ),
+       new MessageConstructor(
+            "",
+            "Приходится сделать крюк, но вы возвращаетесь в гильдию, больше никогда не встречая этих теней",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Приходится сделать крюк, но вы возвращаетесь в гильдию, больше никогда не встречая этих теней",
+            "dialog3_choose1"
+            ),
+    };
+
+    private MessageConstructor[] dialog3 =
+    {
+        new MessageConstructor(
+            "",
+            "Возвращаясь назад, на вашем пути появляются подозрительные тени",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вытянутые силуэты зловеще танцуют по коридору",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы выкрикиваете...",
+            "dialog3"
+            ),
+    };
 
     private MessageConstructor[] dialog2_gold =
     {
@@ -106,12 +314,12 @@ public class MessagesClass //ЭТО СИНГЛТОН
             ),
         new MessageConstructor(
             "",
-            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой.*",
+            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой*",
             ""
             ),
         new MessageConstructor(
             "",
-            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой.*",
+            "*Максимальное здоровье Сира Рыцаря снижено вдвое на следующий бой*",
             "dialog2_mimic"
             ),
     };

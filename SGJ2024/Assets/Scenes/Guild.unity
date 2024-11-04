@@ -6244,7 +6244,6 @@ MonoBehaviour:
   name_text: {fileID: 65407749}
   message_text: {fileID: 1177193272}
   name_constructor: leave_guild
-  nextSceneName: 0
   triggerEvents:
   - eventTrigger: leave_guild
     HideActivatedObjInNextMessage: 1
@@ -7444,11 +7443,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8841975525987658772, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.4349463
+      value: -1.2080536
       objectReference: {fileID: 0}
     - target: {fileID: 8841975525987658772, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7126615
+      value: 1.7073385
       objectReference: {fileID: 0}
     - target: {fileID: 8841975525987658772, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9138,7 +9137,6 @@ MonoBehaviour:
   name_text: {fileID: 546810291}
   message_text: {fileID: 2144466601}
   name_constructor: goodbye_guild
-  nextSceneName: 0
   triggerEvents: []
 --- !u!114 &1008325247
 MonoBehaviour:
@@ -9273,7 +9271,6 @@ MonoBehaviour:
   name_text: {fileID: 2001228228}
   message_text: {fileID: 1487508953}
   name_constructor: welcome_guild
-  nextSceneName: 0
   triggerEvents:
   - eventTrigger: welcome_guild_1
     HideActivatedObjInNextMessage: 0
@@ -16297,16 +16294,19 @@ MonoBehaviour:
   choices:
   - answer: "\u042F \u0445\u043E\u0447\u0443 \u043E\u0442\u0434\u043E\u0445\u043D\u0443\u0442\u044C..."
     name_constructor: leave_guild
+    second_name_constructor: 
     activateObjs:
     - {fileID: 1302696366}
     disableObjs: []
   - answer: "\u042F \u0445\u043E\u0447\u0443 \u0432 \u043F\u043E\u0434\u0437\u0435\u043C\u0435\u043B\u044C\u0435!"
     name_constructor: leave_guild
+    second_name_constructor: 
     activateObjs:
     - {fileID: 968785759}
     disableObjs: []
   - answer: "\u042F \u043F\u0435\u0440\u0435\u0434\u0443\u043C\u0430\u043B"
     name_constructor: leave_guild
+    second_name_constructor: 
     activateObjs:
     - {fileID: 62589667}
     disableObjs:
@@ -18746,11 +18746,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7860378413822263750, guid: 7fc1864124e84b9429d372aaf67595c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: -3.143
       objectReference: {fileID: 0}
     - target: {fileID: 7860378413822263750, guid: 7fc1864124e84b9429d372aaf67595c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.75
+      value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 7860378413822263750, guid: 7fc1864124e84b9429d372aaf67595c2, type: 3}
       propertyPath: m_LocalPosition.z
