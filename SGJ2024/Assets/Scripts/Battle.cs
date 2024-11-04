@@ -70,16 +70,25 @@ namespace BattleSystem
 
         private void Start()
         {
-            int enemiesCount = Random.Range(3, _spawnPoints.Count);
-            Shuffle(_enemiesPrefabs);
-            for (var i = 0; i < enemiesCount; i++)
+            if (_spawnPoints.Count == 1)
             {
                 var instance = Instantiate(_enemiesPrefabs[Random.Range(0, _enemiesPrefabs.Count)], transform);
-                instance.transform.position = _spawnPoints[i].transform.position;
+                instance.transform.position = _spawnPoints[0].transform.position;
                 instance.Target = _knight.GetComponent<Health>();
                 _enemies.Add(instance);
             }
-
+            else
+            {
+                int enemiesCount = Random.Range(3, _spawnPoints.Count);
+                Shuffle(_enemiesPrefabs);
+                for (var i = 0; i < enemiesCount; i++)
+                {
+                    var instance = Instantiate(_enemiesPrefabs[Random.Range(0, _enemiesPrefabs.Count)], transform);
+                    instance.transform.position = _spawnPoints[i].transform.position;
+                    instance.Target = _knight.GetComponent<Health>();
+                    _enemies.Add(instance);
+                }
+            }
             StartCoroutine(EnemyAtacking());
             _targetSwitcher = _knight.GetComponent<KnightTargetSwitcher>();
             _knightHealth = _knight.GetComponent<Health>();
