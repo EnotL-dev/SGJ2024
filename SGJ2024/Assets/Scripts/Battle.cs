@@ -65,7 +65,7 @@ namespace BattleSystem
 
         private void SaveAll()
         {
-            _saverScript.hp = _knightStats.HealthValue;
+            _saverScript.hp = _knightHealth.GetValue();
             _playerCollector.SaveKills();
             _saverScript.gameObject.SetActive(true);
         }

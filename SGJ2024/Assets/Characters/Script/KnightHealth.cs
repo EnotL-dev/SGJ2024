@@ -9,11 +9,7 @@ namespace BattleSystem
         protected override void Start()
         {
             PlayerData pl = SaveManager.LoadPlayerData();
-            //int hp = pl.hp;
-            //int maxHp = pl.lv * 50 + 100;
-            //if (pl.halfHp)
-            //    maxHp /= 2;
-            //_count = hp;
+            int hp = pl.hp;
             base.Start();
         }
 
