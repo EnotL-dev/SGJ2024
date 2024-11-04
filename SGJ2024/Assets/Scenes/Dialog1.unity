@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   add_lv: 1
+  dontChangeHp: 0
   hp: 150
   halfHp: 0
   add_money: 0
@@ -790,18 +791,21 @@ MonoBehaviour:
   - answer: "\u0421\u0438\u0440 \u0420\u044B\u0446\u0430\u0440\u044C, \u043B\u043E\u043C\u0430\u0439\u0442\u0435
       \u043C\u0435\u0447\u0438!"
     name_constructor: dialog1_choose1
+    second_name_constructor: 
     activateObjs:
     - {fileID: 742103501}
     disableObjs:
     - {fileID: 1365234458}
   - answer: "\u0411\u0435\u0436\u0438\u043C!"
     name_constructor: dialog1_choose2
+    second_name_constructor: 
     activateObjs:
     - {fileID: 835008334}
     disableObjs:
     - {fileID: 1365234458}
   - answer: "*\u0417\u0430\u043C\u0435\u0440\u0435\u0442\u044C*"
     name_constructor: dialog1_choose3
+    second_name_constructor: 
     activateObjs:
     - {fileID: 911657220}
     disableObjs:
@@ -1983,6 +1987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   add_lv: 0
+  dontChangeHp: 0
   hp: 100
   halfHp: 0
   add_money: 0
@@ -2206,6 +2211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   add_lv: 1
+  dontChangeHp: 0
   hp: 150
   halfHp: 1
   add_money: 0
@@ -2325,7 +2331,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c5f17d9717b417a4b8ed104c80f96579, type: 3}
   m_Resource: {fileID: 8300000, guid: c5f17d9717b417a4b8ed104c80f96579, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
