@@ -4,8 +4,8 @@ namespace BattleSystem
 {
     public class MagicianAttack : AttackType
     {
-        [SerializeField] private HealAttack _healAttack;
-        [SerializeField] private ShootAttack _shoot;
+        [SerializeField] private AttackType _healAttack;
+        [SerializeField] private AttackType _shoot;
 
         public override void DoAttack()
         {

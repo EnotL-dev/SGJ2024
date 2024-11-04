@@ -23,6 +23,7 @@ namespace BattleSystem
         [SerializeField] private float _timeToAttack = 10f;
         [SerializeField] private float _timeToEnd = 10f;
         [SerializeField] private UnityEvent _OnVictory;
+        [SerializeField] private UnityEvent _OnDefeat;
         private KnightTargetSwitcher _targetSwitcher;
         private Health _knightHealth;
         private bool _poisoning = false;
@@ -48,6 +49,7 @@ namespace BattleSystem
         public void Defeat()
         {
             Debug.Log("Defeat");
+            _OnDefeat?.Invoke();
             _continue = false;
             _darkBackGround.gameObject.SetActive(true);
         }
