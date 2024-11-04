@@ -91,6 +91,7 @@ MonoBehaviour:
   _hpBar: {fileID: 8358195812870949767}
   _damageView: {fileID: 632342914480061134}
   _stats: {fileID: 110291886796923484}
+  _animator: {fileID: 159575631832835531}
   _onHealthOver:
     m_PersistentCalls:
       m_Calls:
@@ -130,6 +131,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _sound: {fileID: 0}
+  _OnSound:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6830217751451747806
 MonoBehaviour:
   m_ObjectHideFlags: 0

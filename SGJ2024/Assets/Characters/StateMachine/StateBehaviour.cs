@@ -12,11 +12,15 @@ namespace BattleSystem
                 return _target;
                         }
             set { _target = value; } }
+
+        public Battle Battle { get; private set; }
+        
         [SerializeField] private Health _target;
         [Space, Tooltip("Attack")]
         [SerializeField] private AttackType _attackType;
         [SerializeField] private SpriteRenderer _sprite;
         [SerializeField] private Animator _animator;
+
         protected State[] _states;
         protected State _currentState;
 
@@ -60,6 +64,7 @@ namespace BattleSystem
                 new Dead(this, _sprite, _animator),
             };
             SwitchState<Idle>();
+            Battle = FindAnyObjectByType<Battle>();
         }
 
         private void Update()

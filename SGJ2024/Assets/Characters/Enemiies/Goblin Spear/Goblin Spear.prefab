@@ -186,6 +186,10 @@ MonoBehaviour:
     m_RotationOrder: 4
   _moveTime: 0.25
   _maxDistance: -0.5
+  _sound: {fileID: 0}
+  _OnAttack:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6954084996003321850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +206,7 @@ MonoBehaviour:
   _hpBar: {fileID: 5026999370023259990}
   _damageView: {fileID: 997014201866113501}
   _stats: {fileID: 5537778099398455542}
+  _animator: {fileID: 7633671312352086592}
   _onHealthOver:
     m_PersistentCalls:
       m_Calls:
@@ -241,6 +246,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _sound: {fileID: 0}
+  _OnSound:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &-1726588641938503299
 MonoBehaviour:
   m_ObjectHideFlags: 0

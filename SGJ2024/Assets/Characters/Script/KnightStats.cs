@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace BattleSystem
 {
@@ -11,6 +12,8 @@ namespace BattleSystem
         private ItemContainer _item = null;
         [SerializeField] private ItemTrower _itemTrower;
         [SerializeField] private Battle _battle;
+        [SerializeField] private AudioResource _sound;
+        [SerializeField] private PlayAudioEvent _onSound;
 
         public enum ItemType
         {
@@ -68,7 +71,8 @@ namespace BattleSystem
         {
             Debug.Log($"id {item.Item.id} | type {GetItemType(item.Item.id)}");
             if (GetItemType(item.Item.id) == ItemType.other) // Зелья, пиво и тд
-            {   
+            {
+                _onSound?.Invoke(_sound);
                 if (item.Item.id >= 17 && item.Item.id <= 20) // Лечение
                 {
                     Health.Heal(item.Item.heal);

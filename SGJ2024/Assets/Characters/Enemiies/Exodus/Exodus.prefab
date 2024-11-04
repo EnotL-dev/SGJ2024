@@ -93,7 +93,6 @@ MonoBehaviour:
   _switcher: {fileID: 8477571909444823887}
   _stats: {fileID: 110291886796923484}
   _animator: {fileID: 7127059168133572710}
-  _battle: {fileID: 0}
   _healValue: 10
 --- !u!114 &3290635103048009718
 MonoBehaviour:
@@ -127,6 +126,7 @@ MonoBehaviour:
   _hpBar: {fileID: 8358195812870949767}
   _damageView: {fileID: 632342914480061134}
   _stats: {fileID: 110291886796923484}
+  _animator: {fileID: 7127059168133572710}
   _onHealthOver:
     m_PersistentCalls:
       m_Calls:
@@ -166,6 +166,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _sound: {fileID: 0}
+  _OnSound:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6830217751451747806
 MonoBehaviour:
   m_ObjectHideFlags: 0

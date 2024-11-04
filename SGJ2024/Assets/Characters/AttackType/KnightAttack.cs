@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace BattleSystem
 {
@@ -10,6 +11,8 @@ namespace BattleSystem
         [SerializeField] private float _moveTime;
         [SerializeField] private float _maxDistance;
         [SerializeField] private Battle _battle;
+        [SerializeField] private AudioResource _sound;
+        [SerializeField] private PlayAudioEvent _onSound;
         private Vector3 _startPosition;
 
         public override void DoAttack()
@@ -37,6 +40,7 @@ namespace BattleSystem
 
         private void DoAttack(List<Health> targets, KnightStats knightStats)
         {
+            _onSound?.Invoke(_sound);
             foreach (Health target in targets)
             {
                 target.TakeDamage(_stats.Damage);
@@ -48,10 +52,13 @@ namespace BattleSystem
         private IEnumerator DoAttack(Health target, KnightStats knightStats, bool weapon)
         {
             _animator.SetTrigger("Attack");
+            _onSound?.Invoke(_sound);
             yield return Forward((target.transform.position - _switcher.transform.position).normalized * _maxDistance + target.transform.position);
             target.TakeDamage(_stats.Damage);
             if (weapon)
+            {
                 knightStats.UseItem();
+            }
             yield return Backward();
         }
 
