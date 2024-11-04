@@ -83,9 +83,11 @@ namespace BattleSystem
             Debug.Log("Dead");
         }
 
-        private void Start()
+        protected virtual void Start()
         {
             _currentValue = _count;
+            
+
         }
     }
 }
