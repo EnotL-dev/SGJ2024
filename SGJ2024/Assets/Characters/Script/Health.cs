@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Events;
 
 namespace BattleSystem
@@ -13,6 +14,8 @@ namespace BattleSystem
         [SerializeField] private Stats _stats;
         [SerializeField] protected Animator _animator;
         [SerializeField] private UnityEvent _onHealthOver;
+        [SerializeField] private AudioResource _sound;
+        [SerializeField] private PlayAudioEvent _OnSound;
         protected int _currentValue;
 
         public int GetValue()
@@ -63,6 +66,7 @@ namespace BattleSystem
                     _animator.SetTrigger("Shield");
                 }
             }
+            _OnSound?.Invoke(_sound);
             _currentValue -= value;
             _hpBar.UpdateValue(_currentValue, _count);
             _damageView.PlayDamage(value);

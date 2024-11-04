@@ -180,6 +180,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _inventory: {fileID: 0}
+  _saver: {fileID: 0}
 --- !u!1 &6363480337359316586
 GameObject:
   m_ObjectHideFlags: 0
