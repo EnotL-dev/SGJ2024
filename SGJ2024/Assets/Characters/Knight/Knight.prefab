@@ -356,6 +356,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _afterBattleLoad: {fileID: 0}
 --- !u!114 &8622981279301511662
 MonoBehaviour:
   m_ObjectHideFlags: 0
