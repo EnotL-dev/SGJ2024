@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace BattleSystem
@@ -21,6 +22,11 @@ namespace BattleSystem
         private bool _poisoning = true;
         private int _poisoningDamage = 1;
         private bool _continue = true;
+
+        public List<Health> GetEnemiesHealths()
+        {
+            return _enemies.Select((x) => x.GetComponent<Health>()).ToList();
+        }
 
         public void Poison(int damage)
         {
@@ -122,7 +128,7 @@ namespace BattleSystem
 
         private IEnumerator Attack(StateBehaviour actor)
         {
-            actor.SwitchState<MeleeAttack>();
+            actor.SwitchState<Attack>();
             yield return new WaitWhile(() => actor.GetCurrentState() is Idle);
             yield return new WaitForSeconds(_enemyWaiting);
         }

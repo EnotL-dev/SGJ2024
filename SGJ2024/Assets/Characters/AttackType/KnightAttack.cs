@@ -4,27 +4,17 @@ using UnityEngine;
 
 namespace BattleSystem
 {
-    public class MeleeAttack : State
+    public class KnightAttack : AttackType
     {
-        private AnimationCurve _animMove;
-        private float _moveTime;
-        private float _maxDistance;
-        private Stats _stats;
+        [SerializeField] private AnimationCurve _animMove;
+        [SerializeField] private float _moveTime;
+        [SerializeField] private float _maxDistance;
+        [SerializeField] private Battle _battle;
         private Vector3 _startPosition;
 
-        public MeleeAttack(StateBehaviour switcher, AnimationCurve animMove, float moveTime, float maxDistance, Stats stats) : base(switcher)
+        public override void DoAttack()
         {
-            _animMove = animMove;
-            _moveTime = moveTime;
-            _maxDistance = maxDistance;
-            _stats = stats;   
-        }
-
-        public override void StartState()
-        {
-            base.StartState();
             _startPosition = _switcher.transform.position;
-
             bool weapon = false;
             bool axe = false;
             KnightStats knightStats = null;
@@ -39,7 +29,7 @@ namespace BattleSystem
             }
             if (weapon && axe)
             {
-                DoAttack(_switcher.GetAllEnemiyes(), knightStats);
+                DoAttack(_battle.GetEnemiesHealths(), knightStats);
             }
             else
                 _switcher.StartCoroutine(DoAttack(_switcher.Target, knightStats, weapon));
