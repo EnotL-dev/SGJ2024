@@ -649,7 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _knight: {fileID: 6470221456438887884}
-  _enemyWaiting: 1
+  _enemyWaiting: 0.5
   _darkBackGround: {fileID: 1858274274}
   _warningMessage: {fileID: 6470221456438887886}
   _warningWaitingTime: 1
@@ -660,8 +660,8 @@ MonoBehaviour:
   - {fileID: 6428350745243828518}
   _enemiesPrefabs:
   - {fileID: 8477571909444823887, guid: 9b410b978dd65814caf3f9377e68aed4, type: 3}
-  _timeToAttack: 10
-  _timeToEnd: 10
+  _timeToAttack: 1
+  _timeToEnd: 3
   _OnVictory:
     m_PersistentCalls:
       m_Calls:

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a0ac7b835fab24b86f9d6adc098215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 150
+  _count: 100
   _hpBar: {fileID: 8358195812870949767}
   _damageView: {fileID: 632342914480061134}
   _stats: {fileID: 110291886796923484}
