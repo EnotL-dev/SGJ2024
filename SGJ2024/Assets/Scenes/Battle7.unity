@@ -649,12 +649,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _knight: {fileID: 6470221456438887884}
-  _enemyWaiting: 2
+  _enemyWaiting: 1
   _darkBackGround: {fileID: 1858274274}
   _warningMessage: {fileID: 6470221456438887886}
   _warningWaitingTime: 1
   _saverScript: {fileID: 2118196553}
   _playerCollector: {fileID: 1833256925}
+  _knightStats: {fileID: 0}
   _spawnPoints:
   - {fileID: 6428350745243828518}
   _enemiesPrefabs:

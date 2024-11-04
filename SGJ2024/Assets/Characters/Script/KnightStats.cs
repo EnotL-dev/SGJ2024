@@ -14,6 +14,9 @@ namespace BattleSystem
         [SerializeField] private Battle _battle;
         [SerializeField] private AudioResource _sound;
         [SerializeField] private PlayAudioEvent _onSound;
+        [SerializeField] private AfterBattleLoad _afterBattleLoad;
+
+        public int HealthValue { get => _health.GetValue(); }
 
         public void ClearItem()
         {

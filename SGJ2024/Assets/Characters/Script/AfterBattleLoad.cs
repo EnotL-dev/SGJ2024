@@ -6,7 +6,7 @@ namespace BattleSystem {
     {
         public bool IsDeath { get; set; }
         [SerializeField] private SceneLoader _sceneLoader;
-        [SerializeField] private int _currentBattleSceneNumber;
+        [SerializeField] public int _currentBattleSceneNumber;
         //[SerializeField] private int _nextBattleSceneNumber;
         [SerializeField] private string _guildSceneName = "Guild";
         [SerializeField] private string _dialogSceneName = "Dialog";
