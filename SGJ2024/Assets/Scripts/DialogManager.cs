@@ -28,7 +28,6 @@ public class DialogManager : MonoBehaviour
     private MessageConstructor[] messagesConstructor = null;
     private MessagesClass messagesClass;
     [Space(20)]
-    [SerializeField] private string nextSceneName; //Для загрузки после конца
     [SerializeField] private TriggerEvents[] triggerEvents;
     private List<GameObject> needHideObjs = new List<GameObject>();
 

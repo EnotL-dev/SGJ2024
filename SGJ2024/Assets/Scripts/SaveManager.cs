@@ -8,7 +8,7 @@ public static class SaveManager
     static SaveManager()
     {
         string documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
-        filePath = Path.Combine(documentsPath, "GameData", "playerData.json");
+        filePath = Path.Combine(documentsPath, "SirKnightData", "playerData.json");
 
         // —оздаЄм директорию, если еЄ нет
         Directory.CreateDirectory(Path.GetDirectoryName(filePath));
