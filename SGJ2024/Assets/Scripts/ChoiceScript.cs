@@ -6,7 +6,7 @@ public class ChoiceScript : MonoBehaviour
     [SerializeField] private ChoiceManager choiceManager;
     [SerializeField] private List<ChoicesConstructor> choices = new List<ChoicesConstructor>();
 
-    private void Start()
+    private void OnEnable()
     {
         choiceManager.InitChoice(choices);
         gameObject.SetActive(false);

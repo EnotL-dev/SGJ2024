@@ -29,11 +29,38 @@ public class MessagesClass //ЭТО СИНГЛТОН
                 return test_choice3;
             case "leave_guild":
                 return leave_guild;
+            case "welcome_guild":
+                return welcome_guild;
+            case "goodbye_guild":
+                return goodbye_guild;
             default:
                 Debug.Log("<Color=red>ТАКОГО КОНСТРУКТА НЕТ!</color>");
                 return null;
         }
     }
+
+    private MessageConstructor[] welcome_guild =
+    {
+        new MessageConstructor(
+            "Администратор",
+            "Добро пожаловать домой.",
+            "welcome_guild_1"
+            ),
+        new MessageConstructor(
+            "Администратор",
+            "Желаете поторговать?",
+            "welcome_guild_2"
+            ),
+    };
+
+    private MessageConstructor[] goodbye_guild =
+    {
+        new MessageConstructor(
+            "Администратор",
+            "Счастливой дороги.",
+            ""
+            )
+    };
 
     private MessageConstructor[] leave_guild =
     {
