@@ -14,6 +14,10 @@ public class DialogManager : MonoBehaviour
         public List<GameObject> disableObjs;
     }
 
+    [SerializeField] private bool hideDialog_InEnd = false;
+    [SerializeField] private GameObject[] activateObjs_InEnd;
+    [SerializeField] private GameObject[] disableObjs_InEnd;
+
     [SerializeField] private Image panel;
     [SerializeField] private Text name_text;
     [SerializeField] private Text message_text;
@@ -27,8 +31,9 @@ public class DialogManager : MonoBehaviour
     [SerializeField] private TriggerEvents[] triggerEvents;
     private List<GameObject> needHideObjs = new List<GameObject>();
 
-    private void Start()
+    private void OnEnable()
     {
+        StopAllCoroutines();
         messagesClass = MessagesClass.GetInstance();
 
         name_text.color = new Color(name_text.color.r, name_text.color.g, name_text.color.b, 0);
@@ -37,9 +42,11 @@ public class DialogManager : MonoBehaviour
 
         messagesConstructor = messagesClass.returnMessages(name_constructor);
 
+        mess_num = 0;
         checktriggers();
         name_text.text = messagesConstructor[mess_num].character_name;
         message_text.text = messagesConstructor[mess_num].message;
+
         mess_num++;
 
         StartCoroutine(startMessage());
@@ -108,7 +115,28 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
-            print("Конец диалога");
+            Debug.Log("Конец диалога");
+
+            if(activateObjs_InEnd.Length > 0)
+            {
+                foreach (GameObject obj in activateObjs_InEnd)
+                {
+                    obj.SetActive(true);
+                }
+            }
+
+            if (disableObjs_InEnd.Length > 0)
+            {
+                foreach (GameObject obj in disableObjs_InEnd)
+                {
+                    obj.SetActive(false);
+                }
+            }
+
+            if (hideDialog_InEnd)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 

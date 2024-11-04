@@ -49,7 +49,7 @@ public class ChoiceManager : MonoBehaviour
 
     private void DisableObjs(int id)
     {
-        foreach (GameObject obj in choices[id].activateObjs)
+        foreach (GameObject obj in choices[id].disableObjs)
         {
             obj.SetActive(false);
         }
