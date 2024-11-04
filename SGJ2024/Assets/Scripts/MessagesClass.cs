@@ -73,11 +73,114 @@ public class MessagesClass //ЭТО СИНГЛТОН
                 return dialog4_choose2;
             case "dialog4_choose3":
                 return dialog4_choose3;
+            case "dialog_guildVisit_enter":
+                return dialog_guildVisit_enter;
+            case "dialog_guildVisit_admin":
+                return dialog_guildVisit_admin;
+            case "dialog_guildVisit_beer":
+                return dialog_guildVisit_beer;
             default:
                 Debug.Log("<Color=red>ТАКОГО КОНСТРУКТА НЕТ!</color>");
                 return null;
         }
     }
+
+    private MessageConstructor[] dialog_guildVisit_beer =
+    {
+        new MessageConstructor(
+            "Рыцарь",
+            "Продай головы и принеси мне ПИВА",
+            ""
+            ),
+    };
+
+    private MessageConstructor[] dialog_guildVisit_admin =
+    {
+        new MessageConstructor(
+            "Администратор",
+            "Добро пожаловать в гильдию пепла",
+            "admin_speak"
+            ),
+        new MessageConstructor(
+            "Администратор",
+            "Я администратор, ко мне вы обращаетесь когда вам нужно что-то купить для походов или продать головы монстров",
+            ""
+            ),
+        new MessageConstructor(
+            "Администратор",
+            "Чем я могу помочь?",
+            ""
+            ),
+        new MessageConstructor(
+            "Оруженосец",
+            "Можно пинту пива?",
+            "kid_speak"
+            ),
+        new MessageConstructor(
+            "Администратор",
+            "Разумеется",
+            "admin_speak"
+            ),
+        new MessageConstructor(
+            "Администратор",
+            "Вот ваше пиво",
+            ""
+            ),
+    };
+
+    private MessageConstructor[] dialog_guildVisit_enter =
+    {
+        new MessageConstructor(
+            "Рыцарь",
+            "шустро ты, малой",
+            "knight_speak"
+            ),
+        new MessageConstructor(
+            "Рыцарь",
+            "Малой, ты же не забыл зачем мы пойдем в подземелье?",
+            ""
+            ),
+        new MessageConstructor(
+            "Оруженосец",
+            "Ради денег?",
+            "kid_speak"
+            ),
+        new MessageConstructor(
+            "Рыцарь",
+            "РАДИ СЛАВЫ!",
+            "knight_speak"
+            ),
+        new MessageConstructor(
+            "Рыцарь",
+            "Я хочу чтобы ты вбил себе в голову почему мы рискуем своими жизнями",
+            ""
+            ),
+        new MessageConstructor(
+            "Оруженосец",
+            "Мгм",
+            "kid_speak"
+            ),
+        new MessageConstructor(
+            "Рыцарь",
+            "Не зря же я спас твою шкуру. АХАХАХА",
+            "knight_speak"
+            ),
+        new MessageConstructor(
+            "Рыцарь",
+            "Будь добр отплатить сполна",
+            "knight_notSpeak"
+            ),
+        new MessageConstructor(
+            "Оруженосец",
+            "...",
+            ""
+            ),
+        new MessageConstructor(
+            "Рыцарь",
+            "Готовься малой. Завтра же начинаем.",
+            "knight_speak"
+            ),
+    };
 
     private MessageConstructor[] dialog4_choose3 =
     {
