@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 09c3245ec888b0042b5309acbd88fa55
+guid: 0c8e76af67c5cbc41989d7148fe63dfb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4238987441372378707
-    second: strelka_0
+      213: 7851006770400001271
+    second: chooseimage_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: Linux64
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,7 +123,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: strelka_0
+      name: chooseimage_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 73
-        width: 306
-        height: 88
+        x: 0
+        y: 0
+        width: 256
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da948a591671c25c0800000000000000
-      internalID: -4238987441372378707
+      spriteID: 7fcf0eeaf0164fc60800000000000000
+      internalID: 7851006770400001271
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      strelka_0: -4238987441372378707
+      chooseimage_0: 7851006770400001271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

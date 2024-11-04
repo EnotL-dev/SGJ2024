@@ -79,11 +79,228 @@ public class MessagesClass //ЭТО СИНГЛТОН
                 return dialog_guildVisit_admin;
             case "dialog_guildVisit_beer":
                 return dialog_guildVisit_beer;
+            case "dialog5":
+                return dialog5;
+            case "dialog5_choose1":
+                return dialog5_choose1;
+            case "dialog5_choose2":
+                return dialog5_choose2;
+            case "dialog6":
+                return dialog6;
+            case "dialog6_choose1":
+                return dialog6_choose1;
+            case "dialog6_choose2":
+                return dialog6_choose2;
+            case "dialog6_choose3":
+                return dialog6_choose3;
             default:
                 Debug.Log("<Color=red>ТАКОГО КОНСТРУКТА НЕТ!</color>");
                 return null;
         }
     }
+
+    private MessageConstructor[] dialog6_choose3 =
+    {
+        new MessageConstructor(
+            "",
+            "Вы решаете не рисковать и вернуться в гильдию",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы решаете не рисковать и вернуться в гильдию",
+            "dialog6_choose3"
+            ),
+    };
+
+    private MessageConstructor[] dialog6_choose2 =
+    {
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь высоко замахивается мечом",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Кристаллы разлетаются в щепки на пути его клинка",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы чувствуете спокойствие после разрушения всех кристаллов в комнате",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Дышать стало легче",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы решаете на обратном пути разрушать побольше этих кристаллов",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы решаете на обратном пути разрушать побольше этих кристаллов",
+            "dialog6_choose2"
+            ),
+    };
+
+    private MessageConstructor[] dialog6_choose1 =
+    {
+        new MessageConstructor(
+            "",
+            "Вы прикасаетесь к светящимся камням",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Какие холодные...",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "У вас пробегают мурашки. Вы начинаете чувствовать слабость и отдергиваете руку от кристаллов",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Чтобы это ни было, его лучше не касаться",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Чтобы это ни было, его лучше не касаться",
+            "dialog6_choose1"
+            ),
+    };
+
+    private MessageConstructor[] dialog6 =
+    {
+        new MessageConstructor(
+            "",
+            "Спускаясь все ниже вы чаще начинает встречать голубые кристаллы, манящие своим светом",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "От них чувствуется знакомая энергия",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Может от них есть прок?",
+            "dialog6"
+            ),
+    };
+
+    private MessageConstructor[] dialog5_choose2 =
+    {
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь одобрительно кивает, глядя на вас с каким-то сожалением",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Кто знает, были это крики людей или нет, да и смогли бы вы им помочь в конце концов",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы идете домой",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы идете домой",
+            "dialog5_choose2"
+            ),
+    };
+
+    private MessageConstructor[] dialog5_choose1 =
+    {
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь кивает головой, думая о славе что ему достанется",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы бежите на звук криков по подземелью",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Перед вашими глазами поредевшая команда. Еще чуть чуть и они все лишатся жизней",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Тело их Лучника разорвано в клочья монстрами, а клирик держится на последнем издыхании",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Сир Рыцарь с грохотом бросается в бой",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Только чудом и чистой доблестью Сир Рыцарь сражает огромного каменного стража",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Уцелевшая команда благодарит Сира Рыцаря за помощь и обещает угостить хмелем",
+            "dialog5_update"
+            ),
+        new MessageConstructor(
+            "",
+            "Они дают вам 150 золотых. Скромная плата за жизнь",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "По их словам на нижнем этаже дремлет мертвое чудище при жизни зараженное миазмами",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Команда говорит, что кристаллы на нижних этажах как-то связаны с миазмами",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Поделившись информацией, поредевшая команда забирает тело своего товарища и направляются к выходу",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы следуете за ними",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Вы следуете за ними",
+            "dialog5_choose1"
+            ),
+    };
+
+    private MessageConstructor[] dialog5 =
+    {
+        new MessageConstructor(
+            "",
+            "Из глубин подземелья слышаться крики зовущие на помощь",
+            ""
+            ),
+        new MessageConstructor(
+            "",
+            "Нужно решать быстро, что вы делаете?",
+            "dialog5"
+            ),
+    };
 
     private MessageConstructor[] dialog_guildVisit_beer =
     {
