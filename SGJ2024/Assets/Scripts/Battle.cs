@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace BattleSystem
 {
@@ -19,6 +20,9 @@ namespace BattleSystem
         [SerializeField] private PlayerCollector _playerCollector;
         [SerializeField] private List<Transform> _spawnPoints = new List<Transform>();
         [SerializeField] private List<StateBehaviour> _enemiesPrefabs = new List<StateBehaviour>();
+        [SerializeField] private float _timeToAttack = 10f;
+        [SerializeField] private float _timeToEnd = 10f;
+        [SerializeField] private UnityEvent _OnVictory;
         private KnightTargetSwitcher _targetSwitcher;
         private Health _knightHealth;
         private bool _poisoning = false;
@@ -94,6 +98,7 @@ namespace BattleSystem
 
         private IEnumerator EnemyAtacking()
         {
+            yield return new WaitForSeconds(_timeToAttack);
             while (_continue)
             {
                 if (_enemies.FindAll((x)=>x.GetCurrentState() is Dead).Count != _enemies.Count) {
@@ -120,6 +125,8 @@ namespace BattleSystem
                 }
                 if (_enemies.Count == 0)
                 {
+                    _OnVictory?.Invoke();
+                    yield return new WaitForSeconds(_timeToEnd);
                     Victory();
                     break;
                 }

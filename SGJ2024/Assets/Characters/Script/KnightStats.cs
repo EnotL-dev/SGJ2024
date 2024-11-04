@@ -15,6 +15,12 @@ namespace BattleSystem
         [SerializeField] private AudioResource _sound;
         [SerializeField] private PlayAudioEvent _onSound;
 
+        public void ClearItem()
+        {
+            if (_item != null)
+                _itemTrower.Launch(_item);
+        }
+
         public enum ItemType
         {
             weapon,
