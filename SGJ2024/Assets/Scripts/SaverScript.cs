@@ -6,16 +6,19 @@ public class SaverScript : MonoBehaviour
 {
     [Header("ÑÎÕĞÀÍßÅÒ ÍÅ ÏÓÑÒÛÅ ÊËÀÑÑÛ ÏÎ ÀÊÒÈÂÀÖÈÈ ÎÁÚÅÊÒÀ.\n Åñëè äàòû íåò, ñîõğàíèò òî ÷òî òóò.")]
     public int add_lv;
+    [SerializeField] private bool dontChangeHp = false;
     public int hp = 100;
     public bool halfHp = false;
     public int add_money;
     [SerializeField] public List<DoubleList> items = new List<DoubleList>();
+    [SerializeField] private bool removeKills = false;
     public KilledMonsters addKilledMonsters = new KilledMonsters(0, 0, 0, 0, 0, 0, 0);
     public bool dragon_was_damaged = false;
 
     private void OnEnable()
     {
         int temp_lv = add_lv;
+        int temp_hp = 1;
         int temp_money = add_money;
         List<DoubleList> temp_items = new List<DoubleList>();
         KilledMonsters temp_addLilledMonsters = new KilledMonsters(0,0,0,0,0,0,0);
@@ -24,6 +27,7 @@ public class SaverScript : MonoBehaviour
         if (loadedData != null)
         {
             temp_lv += loadedData.lv;
+            temp_hp = loadedData.hp;
             temp_money += loadedData.money;
             temp_items = loadedData.items;
             temp_addLilledMonsters = loadedData.killedMonsters;
@@ -33,9 +37,22 @@ public class SaverScript : MonoBehaviour
         {
             temp_items = items;
         }
-        temp_addLilledMonsters = addKills(temp_addLilledMonsters, addKilledMonsters);
 
-        PlayerData playerData = new PlayerData(temp_lv, hp, halfHp, temp_money, temp_items, temp_addLilledMonsters, dragon_was_damaged);
+        if(dontChangeHp)
+        {
+            temp_hp = hp;
+        }
+
+        if (!removeKills)
+        {
+            temp_addLilledMonsters = addKills(temp_addLilledMonsters, addKilledMonsters);
+        }
+        else
+        {
+            temp_addLilledMonsters = new KilledMonsters(0, 0, 0, 0, 0, 0, 0);
+        }
+
+        PlayerData playerData = new PlayerData(temp_lv, temp_hp, halfHp, temp_money, temp_items, temp_addLilledMonsters, dragon_was_damaged);
         SaveManager.SavePlayerData(playerData);
 
         PlayerData _loadedData = SaveManager.LoadPlayerData();

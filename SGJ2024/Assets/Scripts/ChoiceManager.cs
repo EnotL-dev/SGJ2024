@@ -28,7 +28,19 @@ public class ChoiceManager : MonoBehaviour
         ActivateObjs(id);
         DisableObjs(id);
 
-        dialogManager.ChangeConstructor(choices[id].name_constructor);
+        string name_constructor = choices[id].name_constructor;
+
+        if (choices[id].second_name_constructor != "")
+        {
+            int rnd = Random.Range(1, 10);
+            if (rnd > 5)
+            {
+                name_constructor = choices[id].second_name_constructor;
+            }
+            
+        }
+
+        dialogManager.ChangeConstructor(name_constructor);
     }
 
     private void hideButtons()
