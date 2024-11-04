@@ -7,9 +7,11 @@ public class SaverScript : MonoBehaviour
     [Header("ÑÎÕĞÀÍßÅÒ ÍÅ ÏÓÑÒÛÅ ÊËÀÑÑÛ ÏÎ ÀÊÒÈÂÀÖÈÈ ÎÁÚÅÊÒÀ.\n Åñëè äàòû íåò, ñîõğàíèò òî ÷òî òóò.")]
     public int add_lv;
     public int hp = 100;
+    public bool halfHp = false;
     public int add_money;
     [SerializeField] public List<DoubleList> items = new List<DoubleList>();
     public KilledMonsters addKilledMonsters = new KilledMonsters(0, 0, 0, 0, 0, 0, 0);
+    public bool dragon_was_damaged = false;
 
     private void OnEnable()
     {
@@ -33,7 +35,7 @@ public class SaverScript : MonoBehaviour
         }
         temp_addLilledMonsters = addKills(temp_addLilledMonsters, addKilledMonsters);
 
-        PlayerData playerData = new PlayerData(temp_lv, hp, temp_money, temp_items, temp_addLilledMonsters);
+        PlayerData playerData = new PlayerData(temp_lv, hp, halfHp, temp_money, temp_items, temp_addLilledMonsters, dragon_was_damaged);
         SaveManager.SavePlayerData(playerData);
 
         PlayerData _loadedData = SaveManager.LoadPlayerData();

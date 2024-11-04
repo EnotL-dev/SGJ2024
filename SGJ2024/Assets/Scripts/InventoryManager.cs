@@ -92,16 +92,20 @@ public class InventoryManager : MonoBehaviour
     {
         int temp_lv = 0;
         int temp_hp = 100;
+        bool temp_halfHp = false;
         int temp_money = 0;
         KilledMonsters temp_addLilledMonsters = new KilledMonsters(0, 0, 0, 0, 0, 0, 0);
+        bool temp_dragon_was_damaged = false;
 
         PlayerData loadedData = SaveManager.LoadPlayerData();
         if (loadedData != null)
         {
             temp_lv += loadedData.lv;
             temp_hp = loadedData.hp;
+            temp_halfHp = loadedData.halfHp;
             temp_money += loadedData.money;
             temp_addLilledMonsters = loadedData.killedMonsters;
+            temp_dragon_was_damaged = loadedData.dragon_was_damaged;
         }
 
         List<DoubleList> temp_items = new List<DoubleList>();
@@ -112,7 +116,7 @@ public class InventoryManager : MonoBehaviour
             temp_items.Add(new DoubleList(item_in_slot.id_item, item_in_slot.durability_item));
         }
 
-        PlayerData playerData = new PlayerData(temp_lv, temp_hp, temp_money, temp_items, temp_addLilledMonsters);
+        PlayerData playerData = new PlayerData(temp_lv, temp_hp, temp_halfHp, temp_money, temp_items, temp_addLilledMonsters, temp_dragon_was_damaged);
         SaveManager.SavePlayerData(playerData);
     }
 }
