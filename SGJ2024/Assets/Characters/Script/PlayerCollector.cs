@@ -10,6 +10,11 @@ namespace BattleSystem
         [SerializeField] private SaverScript _saver;
         private KillsContainer _killsContainer = new KillsContainer();
 
+        public void Start()
+        {
+            _inventory.battle = true;
+        }
+
         public class KillsContainer
         {
             public int Goblins { get; set; }
@@ -34,6 +39,7 @@ namespace BattleSystem
                 _killsContainer.Guardians,
                 _killsContainer.Exodus
                 );
+            _saver.addKilledMonsters = new KilledMonsters(_killsContainer.Goblins, _killsContainer.Skeletons, _killsContainer.Spiders, _killsContainer.Wolfs, _killsContainer.Grifon, _killsContainer.Guardians, _killsContainer.Exodus);
         }
 
         public bool AreFreePlaces()

@@ -7,6 +7,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private Image[] slots;
     [Space(20)]
     [SerializeField] private List<DoubleList> items;
+    public bool battle = false;
 
     private void OnEnable()
     {
@@ -17,7 +18,8 @@ public class InventoryManager : MonoBehaviour
 
     private void OnDisable()
     {
-        saveItems();
+        if (!battle)
+            saveItems();
     }
 
     public Image[] returnSlots()
