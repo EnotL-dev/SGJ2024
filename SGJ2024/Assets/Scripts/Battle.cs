@@ -18,6 +18,7 @@ namespace BattleSystem
         [Space, Tooltip("saves")]
         [SerializeField] private SaverScript _saverScript;
         [SerializeField] private PlayerCollector _playerCollector;
+        [SerializeField] private KnightStats _knightStats;
         [SerializeField] private List<Transform> _spawnPoints = new List<Transform>();
         [SerializeField] private List<StateBehaviour> _enemiesPrefabs = new List<StateBehaviour>();
         [SerializeField] private float _timeToAttack = 10f;
@@ -64,6 +65,7 @@ namespace BattleSystem
 
         private void SaveAll()
         {
+            //_knightStats.
             _playerCollector.SaveKills();
             _saverScript.gameObject.SetActive(true);
         }
