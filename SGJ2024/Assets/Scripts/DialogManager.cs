@@ -19,6 +19,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] private GameObject[] disableObjs_InEnd;
 
     [SerializeField] private Image panel;
+    [SerializeField] private Image[] appearsWithpanel; //может быть пустым
     [SerializeField] private Text name_text;
     [SerializeField] private Text message_text;
     [Space(20)]
@@ -39,6 +40,14 @@ public class DialogManager : MonoBehaviour
         name_text.color = new Color(name_text.color.r, name_text.color.g, name_text.color.b, 0);
         message_text.color = new Color(message_text.color.r, message_text.color.g, message_text.color.b, 0);
         panel.color = new Color(0, 0, 0, 0);
+
+        if(appearsWithpanel.Length > 0)
+        {
+            foreach(Image img in appearsWithpanel)
+            {
+                img.color = new Color(img.color.r, img.color.g, img.color.b, 0);
+            }
+        }
 
         messagesConstructor = messagesClass.returnMessages(name_constructor);
 
@@ -78,7 +87,7 @@ public class DialogManager : MonoBehaviour
     {
         if (_timer > 0.5f)
         {
-            if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 _timer = 0;
                 nextMessage();

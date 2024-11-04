@@ -16,7 +16,7 @@ public class InteractScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
-            if(inZone)
+            if(inZone && mover.enabled)
             {
                 show_objs();
                 mover.enabled = false;
