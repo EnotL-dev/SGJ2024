@@ -43,9 +43,10 @@ public class TransitionScript : MonoBehaviour
             {
                 ActivateObjs(activateObjs_afterFull);
                 DisableObjs(disableObjs_afterFull);
-                yield return null;
+                break;
             }
         }
+        yield return null;
     }
 
     private IEnumerator startFade()
@@ -63,10 +64,10 @@ public class TransitionScript : MonoBehaviour
                 ActivateObjs(activateObjs);
                 DisableObjs(disableObjs);
 
-                if (fullTransit) StartCoroutine(backFade());
-                yield return null;
+                break;
             }
         }
+        if (fullTransit) StartCoroutine(backFade());
     }
 
     private void ActivateObjs(List<GameObject> objs)

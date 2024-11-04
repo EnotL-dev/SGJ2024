@@ -197,12 +197,12 @@ TextureImporter:
       name: guild_1_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 465
-        width: 145
-        height: 89
+        x: 0
+        y: 0
+        width: 914
+        height: 683
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: guild_1_1
       rect:
         serializedVersion: 2
-        x: 195
-        y: 465
-        width: 117
-        height: 145
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 668
+        y: 440
+        width: 43
+        height: 30
+      alignment: 9
+      pivot: {x: 0.51554126, y: 0.56682026}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,284 +241,20 @@ TextureImporter:
       name: guild_1_2
       rect:
         serializedVersion: 2
-        x: 364
-        y: 521
-        width: 144
-        height: 89
+        x: 644
+        y: 384
+        width: 114
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e29afe47fc82939b0800000000000000
+      spriteID: f4a7110c380109e4da99d6da56d3254c
       internalID: -5100000231535171282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_3
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 324
-        width: 144
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cc3a0df562d86990800000000000000
-      internalID: -7392427452849832768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_4
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 43
-        width: 282
-        height: 370
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 952cb77c98535a7b0800000000000000
-      internalID: -5213702127737912743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_5
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 404
-        width: 143
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 09eca8e4e4f645f10800000000000000
-      internalID: 2257551695335313040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_6
-      rect:
-        serializedVersion: 2
-        x: 561
-        y: 268
-        width: 32
-        height: 173
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b86b97d0e65d0160800000000000000
-      internalID: 6993341320066197688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_7
-      rect:
-        serializedVersion: 2
-        x: 590
-        y: 380
-        width: 31
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19be8eca622a677b0800000000000000
-      internalID: -5226812030523479151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_8
-      rect:
-        serializedVersion: 2
-        x: 617
-        y: 380
-        width: 201
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37ad0820f8eef7600800000000000000
-      internalID: 468355184259553907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_9
-      rect:
-        serializedVersion: 2
-        x: 757
-        y: 268
-        width: 89
-        height: 145
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72377b2c4c2463b10800000000000000
-      internalID: 1960828100614255399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_10
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 296
-        width: 32
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac344f543f7b50f00800000000000000
-      internalID: 1082473540931044298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_11
-      rect:
-        serializedVersion: 2
-        x: 508
-        y: 298
-        width: 53
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5869cefbaa9b1e500800000000000000
-      internalID: 423823982965069445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_12
-      rect:
-        serializedVersion: 2
-        x: 532
-        y: 127
-        width: 33
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2fba34ac2fc646ab0800000000000000
-      internalID: -5015764294952571918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_13
-      rect:
-        serializedVersion: 2
-        x: 617
-        y: 71
-        width: 144
-        height: 137
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e250afe9a4f1f3260800000000000000
-      internalID: 7079411544604935470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guild_1_14
-      rect:
-        serializedVersion: 2
-        x: 757
-        y: 43
-        width: 87
-        height: 174
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e24b3f3f50896c950800000000000000
-      internalID: 6469025066099389486
       vertices: []
       indices: 
       edges: []
@@ -527,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 73a503b7937e257469db208080e3635a
     internalID: 0
     vertices: []
     indices: 
@@ -544,6 +280,7 @@ TextureImporter:
       guild_1_12: -5015764294952571918
       guild_1_13: 7079411544604935470
       guild_1_14: 6469025066099389486
+      guild_1_15: -1501792274
       guild_1_2: -5100000231535171282
       guild_1_3: -7392427452849832768
       guild_1_4: -5213702127737912743

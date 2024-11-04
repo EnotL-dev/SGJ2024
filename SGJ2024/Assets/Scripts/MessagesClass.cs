@@ -27,11 +27,22 @@ public class MessagesClass //ЭТО СИНГЛТОН
                 return test_choice2;
             case "test_choice3":
                 return test_choice3;
+            case "leave_guild":
+                return leave_guild;
             default:
                 Debug.Log("<Color=red>ТАКОГО КОНСТРУКТА НЕТ!</color>");
                 return null;
         }
     }
+
+    private MessageConstructor[] leave_guild =
+    {
+        new MessageConstructor(
+            "",
+            "Вы хотите отдохнуть и восстановить силы или отправиться в подземелье?",
+            "leave_guild"
+            )
+    };
 
     private MessageConstructor[] test_messages =
     {
