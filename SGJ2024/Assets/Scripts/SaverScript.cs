@@ -6,7 +6,7 @@ public class SaverScript : MonoBehaviour
 {
     [Header("ÑÎÕĞÀÍßÅÒ ÍÅ ÏÓÑÒÛÅ ÊËÀÑÑÛ ÏÎ ÀÊÒÈÂÀÖÈÈ ÎÁÚÅÊÒÀ.\n Åñëè äàòû íåò, ñîõğàíèò òî ÷òî òóò.")]
     public int add_lv;
-    [SerializeField] private bool dontChangeHp = false;
+    [SerializeField] private bool dontChangeHp = true;
     public int hp = 100;
     public bool halfHp = false;
     public int add_money;
@@ -38,7 +38,7 @@ public class SaverScript : MonoBehaviour
             temp_items = items;
         }
 
-        if(dontChangeHp)
+        if(!dontChangeHp)
         {
             temp_hp = hp;
         }

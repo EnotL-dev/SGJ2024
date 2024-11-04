@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   add_lv: 1
-  dontChangeHp: 0
+  dontChangeHp: 1
   hp: 150
   halfHp: 0
   add_money: 0
@@ -2211,7 +2211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   add_lv: 1
-  dontChangeHp: 0
+  dontChangeHp: 1
   hp: 150
   halfHp: 1
   add_money: 0
