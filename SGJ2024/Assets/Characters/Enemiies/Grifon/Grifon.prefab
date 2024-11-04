@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a0ac7b835fab24b86f9d6adc098215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 400
+  _count: 250
   _hpBar: {fileID: 5026999370023259990}
   _damageView: {fileID: 997014201866113501}
   _stats: {fileID: 5537778099398455542}

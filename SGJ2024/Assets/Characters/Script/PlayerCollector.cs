@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -63,17 +64,24 @@ namespace BattleSystem
 
         public override void Collect(ItemContainer item)
         {
-            if (item.Item.id > 1)
+            Debug.Log("fkj");
+            if (item.Item.id >= 1)
             {
                 var slots = _inventory.returnSlots();
+                bool find = false;
                 foreach (var image in slots)
                 {
-                    if (!image.transform.GetChild(0).gameObject.activeInHierarchy)
+                    if (image.transform.GetChild(0).GetComponent<DropAndDrag>().id_item == 0)
                     {
                         PasteItem(item, image);
                         Debug.Log("Paste");
+                        find = true;
                         break;
                     }
+                }
+                if (!find)
+                {
+                    Debug.LogError("lOOSE ITEM");
                 }
             }
             else if (item.Item.id <= -10)
