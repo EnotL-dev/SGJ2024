@@ -2290,11 +2290,11 @@ MonoBehaviour:
   add_money: 100
   items:
   - id: 1
-    durability: 10
+    durability: 15
   - id: 2
-    durability: 12
-  - id: 13
     durability: 20
+  - id: 13
+    durability: 15
   - id: 18
     durability: 0
   - id: 0
