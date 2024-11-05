@@ -624,6 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset_lv: 0
   add_lv: 1
   dontChangeHp: 1
   hp: 200
@@ -1169,6 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset_lv: 0
   add_lv: 1
   dontChangeHp: 1
   hp: 200
@@ -1233,6 +1235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset_lv: 0
   add_lv: 1
   dontChangeHp: 1
   hp: 150
@@ -1498,13 +1501,22 @@ MonoBehaviour:
     activateObjs:
     - {fileID: 392892563}
     - {fileID: 695814266}
-    disableObjs: []
+    disableObjs:
+    - {fileID: 374253136}
   - eventTrigger: dialog2_mimic
     HideActivatedObjInNextMessage: 0
     activateObjs:
     - {fileID: 859805082}
     - {fileID: 695814266}
-    disableObjs: []
+    disableObjs:
+    - {fileID: 374253136}
+  - eventTrigger: dialog2_notcheck
+    HideActivatedObjInNextMessage: 0
+    activateObjs:
+    - {fileID: 695814266}
+    - {fileID: 873552400}
+    disableObjs:
+    - {fileID: 374253136}
 --- !u!114 &1226083533
 MonoBehaviour:
   m_ObjectHideFlags: 0
