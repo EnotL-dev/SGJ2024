@@ -45,8 +45,8 @@ public class ItemList
         new Item(
             1,
             "Железный меч",
-            10,
-            50,
+            15,
+            40,
             5,
             0,
             0,
@@ -55,7 +55,7 @@ public class ItemList
         new Item(
             2,
             "Железное копье",
-            12,
+            20,
             40,
             4,
             0,
@@ -65,7 +65,7 @@ public class ItemList
         new Item(
             3,
             "Железный топор",
-            10,
+            15,
             50,
             3,
             0,
@@ -85,8 +85,8 @@ public class ItemList
         new Item(
             5,
             "Стальное копье",
-            25,
-            80,
+            30,
+            90,
             8,
             0,
             0,
@@ -116,7 +116,7 @@ public class ItemList
             8,
             "Зачарованное копье",
             40,
-            150,
+            170,
             15,
             0,
             0,
@@ -157,7 +157,7 @@ public class ItemList
             "Арихалковая алебарда",
             42,
             500,
-            30,
+            35,
             0,
             0,
             "Items/halberd_arichalcum"
@@ -165,7 +165,7 @@ public class ItemList
         new Item(
             13,
             "Железный щит",
-            20,
+            15,
             50,
             0,
             4,
@@ -175,7 +175,7 @@ public class ItemList
         new Item(
             14,
             "Стальной щит",
-            30,
+            25,
             100,
             0,
             10,
@@ -185,20 +185,20 @@ public class ItemList
         new Item(
             15,
             "Зачарованный щит",
-            40,
-            190,
+            35,
+            200,
             0,
-            10,
+            15,
             0,
             "Items/shield_magic"
             ),
         new Item(
             16,
             "Арихалковый щит",
-            50,
+            45,
             400,
             0,
-            30,
+            25,
             0,
             "Items/shield_arichalcum"
             ),

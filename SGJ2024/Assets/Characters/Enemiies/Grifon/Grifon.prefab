@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: {fileID: 6954084996003321850}
-  _damage: 30
+  _damage: 25
   _armor: 0
 --- !u!95 &7633671312352086592
 Animator:
