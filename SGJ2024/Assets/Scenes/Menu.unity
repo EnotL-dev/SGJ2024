@@ -1512,6 +1512,7 @@ MonoBehaviour:
   makeSaveObj: {fileID: 1670584236}
   sceneLoader: {fileID: 65746700}
   transitObj: {fileID: 2000756100}
+  reversObj: {fileID: 1438686278}
 --- !u!1 &1182502443
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,6 +2282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset_lv: 1
   add_lv: 0
   dontChangeHp: 0
   hp: 100
@@ -2293,7 +2295,7 @@ MonoBehaviour:
     durability: 12
   - id: 13
     durability: 20
-  - id: 0
+  - id: 18
     durability: 0
   - id: 0
     durability: 0
