@@ -165,7 +165,7 @@ public class ItemList
         new Item(
             13,
             "Железный щит",
-            8,
+            20,
             50,
             0,
             4,
@@ -175,7 +175,7 @@ public class ItemList
         new Item(
             14,
             "Стальной щит",
-            14,
+            30,
             100,
             0,
             10,
@@ -185,7 +185,7 @@ public class ItemList
         new Item(
             15,
             "Зачарованный щит",
-            20,
+            40,
             190,
             0,
             10,
@@ -195,7 +195,7 @@ public class ItemList
         new Item(
             16,
             "Арихалковый щит",
-            25,
+            50,
             400,
             0,
             30,

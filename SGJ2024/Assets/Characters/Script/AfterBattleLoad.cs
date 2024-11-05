@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace BattleSystem {
     public class AfterBattleLoad : MonoBehaviour
@@ -13,6 +14,7 @@ namespace BattleSystem {
         [SerializeField] private string _deathSceneName = "Guild";
         [SerializeField] private string _nextSceneName = "Dialog0_1";
         [SerializeField] private bool _isNotEducation = true;
+        [SerializeField] private UnityEvent _onSave;
 
         public void Start()
         {
@@ -27,6 +29,7 @@ namespace BattleSystem {
                 else
                 {
                     _sceneLoader.scene_name = $"{_dialogSceneName}{_currentBattleSceneNumber}";
+                    _onSave?.Invoke();
                 }
             }
             else
@@ -38,7 +41,7 @@ namespace BattleSystem {
                 else
                 {
                     _sceneLoader.scene_name = _nextSceneName;
-
+                    _onSave?.Invoke();
                 }
             }
             _sceneLoader.gameObject.SetActive(true);

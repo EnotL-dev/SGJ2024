@@ -17,11 +17,16 @@ namespace BattleSystem
         [SerializeField] private AfterBattleLoad _afterBattleLoad;
 
         public int HealthValue { get => _health.GetValue(); }
+        public bool End { get; private set; }
 
-        public void ClearItem()
+        public ItemContainer ClearItem()
         {
-            if (_item != null)
-                _itemTrower.Launch(_item);
+            var item = _item;
+            _item = null;
+            End = true;
+            Debug.Log($"Knight item storage is clear");
+            return item;
+            //_itemTrower.Launch(_item);
         }
 
         public enum ItemType
@@ -104,9 +109,18 @@ namespace BattleSystem
             }
             else
             {
-                if (_item != null)
-                    _itemTrower.Launch(_item);
-                _item = item;
+                if (End)
+                {
+                    PlayerCollector collector = _itemTrower.Target as PlayerCollector;
+                    collector.InsertItemInInventory(item);
+                }
+                else
+                {
+
+                    if (_item != null)
+                        _itemTrower.Launch(_item);
+                    _item = item;
+                }
             }
         }
 

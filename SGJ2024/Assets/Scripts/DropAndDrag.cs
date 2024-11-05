@@ -7,6 +7,7 @@ using BattleSystem;
 
 public class DropAndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
+    public bool BlockGetting { get; set; } = false;
     [HideInInspector] public CanvasGroup canvasGroup;
     private RectTransform rectTransform;
     [SerializeField] private ItemTrower _itemTrower;
@@ -55,7 +56,7 @@ public class DropAndDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
         {
             List<GameObject> uiElementsUnderMouse = raycastElementsUI.GetUIElementsUnderMouse();
 
-            if (uiElementsUnderMouse.Count < 1)
+            if (uiElementsUnderMouse.Count < 1 && !BlockGetting)
             {
                 _itemTrower.Launch(new ItemContainer(id_item, durability_item));
                 InventoryManager inventoryManager = GameObject.FindWithTag("InventoryManager").GetComponent<InventoryManager>();

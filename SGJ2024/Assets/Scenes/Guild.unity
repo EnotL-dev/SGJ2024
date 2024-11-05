@@ -8124,6 +8124,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3668133626282772764, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786935075488327608, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5266306105402402643, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
       propertyPath: _speed
       value: 3
@@ -8172,7 +8180,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3786935075488327608, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
+    - {fileID: 3668133626282772764, guid: 9bf69f8d54b20ef438f3af43ef446880, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

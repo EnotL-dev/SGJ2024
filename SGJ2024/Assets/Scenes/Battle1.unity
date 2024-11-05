@@ -265,7 +265,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &12861969
 MonoBehaviour:
@@ -499,7 +499,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -574,10 +574,10 @@ MonoBehaviour:
   _enemyWaiting: 0.5
   _darkBackGround: {fileID: 1858274274}
   _warningMessage: {fileID: 6470221456438887886}
-  _warningWaitingTime: 1
+  _warningWaitingTime: 1.25
   _saverScript: {fileID: 2118196553}
   _playerCollector: {fileID: 1833256925}
-  _knightStats: {fileID: 0}
+  _knightStats: {fileID: 6470221456438887892}
   _spawnPoints:
   - {fileID: 6428350745243828518}
   - {fileID: 6428350745243828517}
@@ -593,36 +593,14 @@ MonoBehaviour:
   - {fileID: 6078144697040779983, guid: 9f7f776b2065c5a40a33e87b85b38510, type: 3}
   _timeToAttack: 1
   _timeToEnd: 3
+  _inventory: {fileID: 1764525158}
+  _afterBattleLoad: {fileID: 1939945355}
   _OnVictory:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6470221456438887892}
-        m_TargetAssemblyTypeName: BattleSystem.KnightStats, Assembly-CSharp
-        m_MethodName: ClearItem
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _OnDefeat:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1939945355}
-        m_TargetAssemblyTypeName: BattleSystem.AfterBattleLoad, Assembly-CSharp
-        m_MethodName: set_IsDeath
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &221355592
 Transform:
   m_ObjectHideFlags: 0
@@ -741,7 +719,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -1000,7 +978,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -1110,7 +1088,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &348496691
 MonoBehaviour:
@@ -1334,7 +1312,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &402323133
 MonoBehaviour:
@@ -1520,7 +1498,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &434303572
 MonoBehaviour:
@@ -1615,7 +1593,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -1712,7 +1690,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -1809,7 +1787,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -1919,7 +1897,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &573018473
 MonoBehaviour:
@@ -2014,7 +1992,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -2455,7 +2433,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &972057143
 MonoBehaviour:
@@ -2707,7 +2685,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -2807,7 +2785,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1031912595
 MonoBehaviour:
@@ -2926,7 +2904,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1066861374
 MonoBehaviour:
@@ -3114,7 +3092,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1108018245
 MonoBehaviour:
@@ -3384,7 +3362,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1160947783
 MonoBehaviour:
@@ -3557,7 +3535,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -3654,7 +3632,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -3751,7 +3729,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -3848,7 +3826,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -3958,7 +3936,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1423569514
 MonoBehaviour:
@@ -4332,7 +4310,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1494464715
 MonoBehaviour:
@@ -4440,7 +4418,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1591787685
 MonoBehaviour:
@@ -4548,7 +4526,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1677059584
 MonoBehaviour:
@@ -4643,7 +4621,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -4740,7 +4718,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -5206,7 +5184,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -5394,7 +5372,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &1938388584
 MonoBehaviour:
@@ -5470,6 +5448,21 @@ MonoBehaviour:
   _deathSceneName: Guild
   _nextSceneName: Dialog1
   _isNotEducation: 1
+  _onSave:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 221355591}
+        m_TargetAssemblyTypeName: BattleSystem.Battle, Assembly-CSharp
+        m_MethodName: SaveAll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1939945356
 Transform:
   m_ObjectHideFlags: 0
@@ -5758,7 +5751,7 @@ MonoBehaviour:
   disableSlot: {fileID: 6060870648399178492, guid: 29993e3f1c31a074888c3855eb732ca2, type: 3}
   parent_for_information: {fileID: 1860811117}
   panel: {fileID: 6109549937309936819, guid: 7260b559cc668f14dba179a3783d01d9, type: 3}
-  sword_sound: {fileID: 8300000, guid: a6e457cae82caad4fa2c8aeec611f53d, type: 3}
+  sword_sound: {fileID: 8300000, guid: 2a90bf43f10cffb41ac2610f47dfcb4a, type: 3}
   spear_sound: {fileID: 8300000, guid: 923841495d805fc44acc7631b6077a7d, type: 3}
   shield_sound: {fileID: 8300000, guid: 1ca2307b78b81dc44b49a1cdac3096c6, type: 3}
   potion_sound: {fileID: 8300000, guid: 38e882d4c50ba5243b74eddf170cf56e, type: 3}
@@ -5928,7 +5921,7 @@ MonoBehaviour:
   mySlot: {fileID: 0}
   id_item: 0
   durability_item: 0
-  takeitem_sound: {fileID: 0}
+  takeitem_sound: {fileID: 8300000, guid: 3e03af53359736b47915ac56bf6094d7, type: 3}
   raycastElementsUI: {fileID: 1425465094}
 --- !u!114 &2124329038
 MonoBehaviour:
