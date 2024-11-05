@@ -11,6 +11,13 @@ namespace BattleSystem
         [SerializeField] private Color _healColor = Color.green;
         [SerializeField] private Color _poisonColor = Color.yellow;
 
+        public void PlayMessage()
+        {
+            _textMeshPro.color = _damageColor;
+            gameObject.SetActive(true);
+            _animation.Play();
+        }
+
         public void PlayDamage(int damage)
         {
             _textMeshPro.color = _damageColor;
