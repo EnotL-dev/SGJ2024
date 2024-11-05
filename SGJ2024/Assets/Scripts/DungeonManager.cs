@@ -18,6 +18,7 @@ public class DungeonManager : MonoBehaviour
     [SerializeField] private Cells[] cells;
     [SerializeField] private SceneLoader sceneLoader;
     [SerializeField] private GameObject transitObj;
+    [SerializeField] private GameObject destroyReverseTransit;
 
     private void Awake()
     {
@@ -61,6 +62,7 @@ public class DungeonManager : MonoBehaviour
             string scene_name = "Battle"+ lvScene;
             sceneLoader.scene_name = scene_name;
 
+            destroyReverseTransit.SetActive(false);
             transitObj.SetActive(true);
         }
     }

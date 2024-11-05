@@ -3400,6 +3400,7 @@ MonoBehaviour:
     active: {fileID: 1722884123}
   sceneLoader: {fileID: 1150459851}
   transitObj: {fileID: 1580501413}
+  destroyReverseTransit: {fileID: 894026609}
 --- !u!1 &688703828
 GameObject:
   m_ObjectHideFlags: 0
