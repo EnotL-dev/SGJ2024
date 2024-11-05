@@ -9,6 +9,20 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private List<DoubleList> items;
     public bool battle = false;
 
+    public List<DoubleList> GetItems()
+    {
+        return items;
+    }
+
+    public void BlockGetting()
+    {
+        foreach (var item in slots)
+        {
+            item.transform.GetChild(0).GetComponent<DropAndDrag>().BlockGetting = true;
+        }
+        Debug.Log("Invetory is blocked");
+    }
+
     private void OnEnable()
     {
         PlayerData loadedData = SaveManager.LoadPlayerData();

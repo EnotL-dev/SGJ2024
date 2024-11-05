@@ -5,6 +5,7 @@ namespace BattleSystem
 {
     public class ItemTrower : MonoBehaviour
     {
+        public ItemÑollector Target { get => _collector; }
         [SerializeField] private FlyingItem _prefab;
         [SerializeField] private float _poolSize = 5f;
         [SerializeField] private Transform _target;

@@ -12,7 +12,8 @@ namespace BattleSystem
 
         public void Start()
         {
-            _inventory.battle = true;
+            if (_inventory != null)
+                _inventory.battle = true;
         }
 
         public class KillsContainer
@@ -68,30 +69,36 @@ namespace BattleSystem
             //makeSound(item.gameObject.GetComponent<DropAndDrag>().id_item);
         }
 
+        public void InsertItemInInventory(ItemContainer item)
+        {
+            var slots = _inventory.returnSlots();
+            bool find = false;
+            foreach (var image in slots)
+            {
+                if (image.transform.GetChild(0).GetComponent<DropAndDrag>().id_item == 0)
+                {
+                    Debug.Log($"Player Send item in inventory: itemId {item.Item.id}");
+                    PasteItem(item, image);
+                    find = true;
+                    break;
+                }
+            }
+            if (!find)
+            {
+                Debug.LogError("lOOSE ITEM");
+            }
+        }
+
         public override void Collect(ItemContainer item)
         {
-            Debug.Log("fkj");
+            Debug.Log($"Player Collect item {item.Item.id}");
             if (item.Item.id >= 1)
             {
-                var slots = _inventory.returnSlots();
-                bool find = false;
-                foreach (var image in slots)
-                {
-                    if (image.transform.GetChild(0).GetComponent<DropAndDrag>().id_item == 0)
-                    {
-                        PasteItem(item, image);
-                        Debug.Log("Paste");
-                        find = true;
-                        break;
-                    }
-                }
-                if (!find)
-                {
-                    Debug.LogError("lOOSE ITEM");
-                }
+                InsertItemInInventory(item);
             }
             else if (item.Item.id <= -10)
             {
+                Debug.Log($"Player collected item as head itemId {item.Item.id}");
                 switch (item.Item.id)
                 {
                     case -10:

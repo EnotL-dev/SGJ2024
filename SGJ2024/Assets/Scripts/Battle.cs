@@ -23,6 +23,8 @@ namespace BattleSystem
         [SerializeField] private List<StateBehaviour> _enemiesPrefabs = new List<StateBehaviour>();
         [SerializeField] private float _timeToAttack = 10f;
         [SerializeField] private float _timeToEnd = 10f;
+        [SerializeField] private InventoryManager _inventory;
+        [SerializeField] private AfterBattleLoad _afterBattleLoad;
         [SerializeField] private UnityEvent _OnVictory;
         [SerializeField] private UnityEvent _OnDefeat;
         private KnightTargetSwitcher _targetSwitcher;
@@ -51,7 +53,9 @@ namespace BattleSystem
         {
             Debug.Log("Defeat");
             _OnDefeat?.Invoke();
+            _afterBattleLoad.IsDeath = true;
             _continue = false;
+            _inventory.BlockGetting();
             _darkBackGround.gameObject.SetActive(true);
         }
 
@@ -59,12 +63,17 @@ namespace BattleSystem
         {
             Debug.Log("Victory");
             _continue = false;
+            _inventory.BlockGetting();
             _darkBackGround.gameObject.SetActive(true);
-            SaveAll();
+            _playerCollector.InsertItemInInventory(_knightStats.ClearItem());
+            //SaveAll(); call when  complete dark bacground
         }
 
-        private void SaveAll()
+        public void SaveAll()
         {
+            
+            _saverScript.items = _inventory.GetItems();
+            Debug.Log($"_knightHealth.GetValue() {_knightHealth.GetValue()}");
             _saverScript.hp = _knightHealth.GetValue();
             _playerCollector.SaveKills();
             _saverScript.gameObject.SetActive(true);

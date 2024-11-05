@@ -9,8 +9,10 @@ namespace BattleSystem
         protected override void Start()
         {
             PlayerData pl = SaveManager.LoadPlayerData();
-            int hp = pl.hp;
-            base.Start();
+            _currentValue = pl.hp;
+            if (_currentValue > _count)
+                _currentValue = _count;
+            //base.Start();
         }
 
         protected override void Dead()

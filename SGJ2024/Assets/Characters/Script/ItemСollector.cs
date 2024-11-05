@@ -12,7 +12,8 @@ namespace BattleSystem
 
         public virtual void Collect(ItemContainer item)
         {
-            _onCollect?.Invoke(item);
+            if (item != null)
+                _onCollect?.Invoke(item);
         }
     }
 }
