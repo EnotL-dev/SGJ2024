@@ -22,7 +22,7 @@ namespace BattleSystem
             {
                 _currentValue = temp_count;
             }
-
+            _hpBar.UpdateValue(_currentValue, _count);
 
             //base.Start();
         }

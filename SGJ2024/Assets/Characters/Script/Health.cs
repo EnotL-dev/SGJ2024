@@ -9,7 +9,7 @@ namespace BattleSystem
         public int PotionArmor { get; set; } = 0;
 
         [SerializeField] protected int _count = 100;
-        [SerializeField] private HpBar _hpBar;
+        [SerializeField] protected HpBar _hpBar;
         [SerializeField] private DamageView _damageView;
         [SerializeField] private Stats _stats;
         [SerializeField] protected Animator _animator;
