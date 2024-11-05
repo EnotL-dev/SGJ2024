@@ -94,11 +94,11 @@ public class StoreManager : MonoBehaviour
 
             addMoney += killedMonsters.goblins * 25;
             addMoney += killedMonsters.skeletons * 35;
-            addMoney += killedMonsters.spiders * 80;
-            addMoney += killedMonsters.wolfs * 90;
-            addMoney += killedMonsters.grifon * 140;
+            addMoney += killedMonsters.spiders * 90;
+            addMoney += killedMonsters.wolfs * 100;
+            addMoney += killedMonsters.grifon * 120;
             addMoney += killedMonsters.guardians * 200;
-            addMoney += killedMonsters.exodus * 240;
+            addMoney += killedMonsters.exodus * 270;
             killedMonsters = new KilledMonsters(0, 0, 0, 0, 0, 0, 0);
 
             money += addMoney;
