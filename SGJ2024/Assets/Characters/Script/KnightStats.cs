@@ -15,6 +15,7 @@ namespace BattleSystem
         [SerializeField] private AudioResource _sound;
         [SerializeField] private PlayAudioEvent _onSound;
         [SerializeField] private AfterBattleLoad _afterBattleLoad;
+        [SerializeField] private DamageView _brokenItemMessage;
 
         public int HealthValue { get => _health.GetValue(); }
         public bool End { get; private set; }
@@ -132,6 +133,7 @@ namespace BattleSystem
             if (!_item.UseItem())
             {
                 _item = null;
+                _brokenItemMessage.PlayMessage();
                 Debug.Log("Item is Broken");
             }
         }
