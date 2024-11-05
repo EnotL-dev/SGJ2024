@@ -7,11 +7,13 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private GameObject makeSaveObj;
     [SerializeField] private SceneLoader sceneLoader;
     [SerializeField] private GameObject transitObj;
+    [SerializeField] private GameObject reversObj;
     public void startGame()
     {
         makeSaveObj.SetActive(true);
         sceneLoader.scene_name = "Dialog0";
         transitObj.SetActive(true);
+        reversObj.SetActive(false);
     }
 
     public void continueGame()
@@ -25,6 +27,7 @@ public class MenuScript : MonoBehaviour
         {
             sceneLoader.scene_name = "Guild";
             transitObj.SetActive(true);
+            reversObj.SetActive(false);
         }
     }
 
