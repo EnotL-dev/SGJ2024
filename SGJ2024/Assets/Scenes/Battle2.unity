@@ -591,8 +591,6 @@ MonoBehaviour:
   - {fileID: 8477571909444823887, guid: a479c6d5383a1f24aa02ec8599c67dcc, type: 3}
   - {fileID: 6078144697040779983, guid: ba759300a8be9c94696fe4b9da9ed85c, type: 3}
   - {fileID: 6078144697040779983, guid: 9f7f776b2065c5a40a33e87b85b38510, type: 3}
-  - {fileID: 8477571909444823887, guid: 41d756e920de1c044adeb340e0b296ec, type: 3}
-  - {fileID: 6078144697040779983, guid: 3be15d44bd06f25408c3872c9b76d74d, type: 3}
   _timeToAttack: 1
   _timeToEnd: 3
   _inventory: {fileID: 1764525158}
