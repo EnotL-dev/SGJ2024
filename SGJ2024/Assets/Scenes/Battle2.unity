@@ -5585,8 +5585,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset_lv: 0
   add_lv: 0
-  dontChangeHp: 1
+  dontChangeHp: 0
   hp: 100
   halfHp: 0
   add_money: 0
