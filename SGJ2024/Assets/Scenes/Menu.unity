@@ -2281,6 +2281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset_lv: 1
   add_lv: 0
   dontChangeHp: 0
   hp: 100
@@ -2293,7 +2294,7 @@ MonoBehaviour:
     durability: 12
   - id: 13
     durability: 8
-  - id: 0
+  - id: 18
     durability: 0
   - id: 0
     durability: 0

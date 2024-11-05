@@ -5,6 +5,7 @@ using UnityEngine;
 public class SaverScript : MonoBehaviour
 {
     [Header("ÑÎÕĞÀÍßÅÒ ÍÅ ÏÓÑÒÛÅ ÊËÀÑÑÛ ÏÎ ÀÊÒÈÂÀÖÈÈ ÎÁÚÅÊÒÀ.\n Åñëè äàòû íåò, ñîõğàíèò òî ÷òî òóò.")]
+    public bool reset_lv = false;
     public int add_lv;
     [SerializeField] private bool dontChangeHp = true;
     public int hp = 100;
@@ -50,6 +51,11 @@ public class SaverScript : MonoBehaviour
         else
         {
             temp_addLilledMonsters = new KilledMonsters(0, 0, 0, 0, 0, 0, 0);
+        }
+
+        if(reset_lv)
+        {
+            temp_lv = 0;
         }
 
         PlayerData playerData = new PlayerData(temp_lv, temp_hp, halfHp, temp_money, temp_items, temp_addLilledMonsters, dragon_was_damaged);
