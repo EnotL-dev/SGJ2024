@@ -296,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset_lv: 0
   add_lv: 1
   dontChangeHp: 1
   hp: 150
@@ -801,13 +802,6 @@ MonoBehaviour:
     second_name_constructor: 
     activateObjs:
     - {fileID: 835008334}
-    disableObjs:
-    - {fileID: 1365234458}
-  - answer: "*\u0417\u0430\u043C\u0435\u0440\u0435\u0442\u044C*"
-    name_constructor: dialog1_choose3
-    second_name_constructor: 
-    activateObjs:
-    - {fileID: 911657220}
     disableObjs:
     - {fileID: 1365234458}
 --- !u!4 &799871840
@@ -1986,6 +1980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset_lv: 0
   add_lv: 0
   dontChangeHp: 0
   hp: 100
@@ -2210,6 +2205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4dc48c76a63264f85683d8245263f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reset_lv: 0
   add_lv: 1
   dontChangeHp: 1
   hp: 150
