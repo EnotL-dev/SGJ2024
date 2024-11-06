@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1908787639068437329}
   - component: {fileID: 4194014237000361416}
   - component: {fileID: 3290635103048009718}
-  - component: {fileID: 3156717256209919218}
+  - component: {fileID: 9166637849124961435}
   - component: {fileID: 6830217751451747806}
   - component: {fileID: 110291886796923484}
   - component: {fileID: 7127059168133572710}
@@ -78,7 +78,7 @@ MonoBehaviour:
   _switcher: {fileID: 8477571909444823887}
   _stats: {fileID: 110291886796923484}
   _animator: {fileID: 7127059168133572710}
-  _healAttack: {fileID: 0}
+  _healAttack: {fileID: 4194014237000361416}
   _shoot: {fileID: 3290635103048009718}
 --- !u!114 &4194014237000361416
 MonoBehaviour:
@@ -193,7 +193,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3156717256209919218
+--- !u!114 &9166637849124961435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1819619242486198662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a0ac7b835fab24b86f9d6adc098215, type: 3}
+  m_Script: {fileID: 11500000, guid: ae37e9cfbee7f6c4fae80f615f5277bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 600
@@ -265,6 +265,7 @@ MonoBehaviour:
   _OnSound:
     m_PersistentCalls:
       m_Calls: []
+  _daragonWasDamagedHealthReducer: 200
 --- !u!114 &6830217751451747806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb40a8495f26a3d4cbba94bad2a19f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: {fileID: 3156717256209919218}
+  _health: {fileID: 9166637849124961435}
   _damage: 40
   _armor: 0
 --- !u!95 &7127059168133572710
