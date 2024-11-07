@@ -11,7 +11,7 @@ namespace BattleSystem
             PlayerData pl = SaveManager.LoadPlayerData();
             _currentValue = pl.hp;
             bool halfHp = pl.halfHp;
-            int temp_count = _count;
+            int temp_count = _count + (pl.lv*50);
 
             if (halfHp)
             {
@@ -22,7 +22,8 @@ namespace BattleSystem
             {
                 _currentValue = temp_count;
             }
-            _hpBar.UpdateValue(_currentValue, _count);
+
+            _hpBar.UpdateValue(_currentValue, temp_count);
 
             //base.Start();
         }

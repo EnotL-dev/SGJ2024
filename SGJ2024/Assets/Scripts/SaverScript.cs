@@ -64,7 +64,7 @@ public class SaverScript : MonoBehaviour
         PlayerData _loadedData = SaveManager.LoadPlayerData();
         if (loadedData != null)
         {
-            Debug.Log($"Уровень: {_loadedData.lv}, ХП сейчас: {_loadedData.hp}, Деньги: {_loadedData.money}, Предметов: {_loadedData.items.Count}, Монстров: {_loadedData.killedMonsters.goblins}");
+            Debug.Log("Сохранение");
         }
     }
 

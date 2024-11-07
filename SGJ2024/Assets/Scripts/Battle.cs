@@ -75,6 +75,7 @@ namespace BattleSystem
             _saverScript.items = _inventory.GetItems();
             Debug.Log($"_knightHealth.GetValue() {_knightHealth.GetValue()}");
             _saverScript.hp = _knightHealth.GetValue();
+            _saverScript.halfHp = false;
             _playerCollector.SaveKills();
             _saverScript.gameObject.SetActive(true);
         }
