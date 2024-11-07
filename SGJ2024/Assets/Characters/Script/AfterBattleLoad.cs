@@ -24,7 +24,7 @@ namespace BattleSystem {
                 if (loadedData.lv > _currentBattleSceneNumber)
                 {
                     _sceneLoader.scene_name = _guildSceneName;
-
+                    _onSave?.Invoke();
                 }
                 else
                 {
