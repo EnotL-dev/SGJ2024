@@ -92,13 +92,13 @@ public class StoreManager : MonoBehaviour
         {
             int addMoney = 0;
 
-            addMoney += killedMonsters.goblins * 40;
-            addMoney += killedMonsters.skeletons * 50;
-            addMoney += killedMonsters.spiders * 120;
-            addMoney += killedMonsters.wolfs * 150;
-            addMoney += killedMonsters.grifon * 180;
-            addMoney += killedMonsters.guardians * 250;
-            addMoney += killedMonsters.exodus * 300;
+            addMoney += killedMonsters.goblins * 30;
+            addMoney += killedMonsters.skeletons * 40;
+            addMoney += killedMonsters.spiders * 110;
+            addMoney += killedMonsters.wolfs * 140;
+            addMoney += killedMonsters.grifon * 170;
+            addMoney += killedMonsters.guardians * 240;
+            addMoney += killedMonsters.exodus * 280;
             killedMonsters = new KilledMonsters(0, 0, 0, 0, 0, 0, 0);
 
             money += addMoney;
