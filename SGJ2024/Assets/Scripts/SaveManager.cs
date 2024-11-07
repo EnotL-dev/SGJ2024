@@ -19,6 +19,7 @@ public static class SaveManager
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(filePath, json);
         Debug.Log("Данные игрока сохранены в файл: " + filePath);
+        loging(data);
     }
 
     public static PlayerData LoadPlayerData()
@@ -28,6 +29,7 @@ public static class SaveManager
             string json = File.ReadAllText(filePath);
             PlayerData data = JsonUtility.FromJson<PlayerData>(json);
             Debug.Log("Данные игрока загружены из файла: " + filePath);
+            loging(data);
             return data;
         }
 
@@ -42,5 +44,23 @@ public static class SaveManager
             File.Delete(filePath);
             Debug.Log("Файл данных игрока удален.");
         }
+    }
+
+    private static void loging(PlayerData data)
+    {
+        string logData = $"Уровень: {data.lv}, ХП сейчас: {data.hp}, Срезаны ХП?: {data.halfHp}, Деньги: {data.money}, Дракон поврежден?: {data.dragon_was_damaged}\n";
+        if(data.items.Count > 0)
+        {
+            logData += "Предметы: ";
+            foreach(DoubleList item in data.items)
+            {
+                logData += $"{item.id} {item.durability} ";
+            }
+        }
+
+        logData += $"Убитые монстры: гоблины {data.killedMonsters.goblins} скелеты {data.killedMonsters.skeletons} пауки {data.killedMonsters.spiders}грифоны {data.killedMonsters.grifon} волки {data.killedMonsters.wolfs}" +
+            $" стражи {data.killedMonsters.guardians} исчадия {data.killedMonsters.exodus}";
+        
+        Debug.Log(logData);
     }
 }
