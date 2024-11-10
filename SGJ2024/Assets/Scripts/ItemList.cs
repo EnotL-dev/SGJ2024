@@ -273,7 +273,7 @@ public class ItemList
             "Items/poison_antidote"
             ),
             // ÃÎËÎÂÛ
-            new Item(
+        new Item(
             -10,
             "Ãמכמגא",
             0,

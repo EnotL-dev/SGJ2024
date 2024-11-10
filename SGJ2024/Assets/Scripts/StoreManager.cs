@@ -76,7 +76,7 @@ public class StoreManager : MonoBehaviour
             durability_quo = (float)item.durability / (float)sell_item.durability;
         }
 
-        float tempsell = ((float)sell_item.cost / 2 / durability_quo);
+        float tempsell = ((float)sell_item.cost / 2 * durability_quo);
         money += (int)tempsell;
         money_text.text = $"{money}";
 
